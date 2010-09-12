@@ -1,0 +1,13 @@
+Bibliografía:
+
+http://en.wikipedia.org/wiki/Volunteer_computing 
+http://www.jgroups.org/taskdistribution.html 
+http://boinc.berkeley.edu 
+http://boinc.berkeley.edu/trac/wiki/SecurityIssues 
+http://boinc.berkeley.edu/trac/wiki/BoincPapers
+http://www.spiritus-temporis.com/volunteer-computing/
+http://www.mersenne.org/ first vc project
+
+* Advances in Grid and Pervasive Computing: 5th International Conference, Bellavista, Paolo Chang; Ruay-Shiung; Chao, Han-Chieh; Lin, Shin-Feng
+* WordWide computing and its applications, Yoshifumi, Takuya Katayama, Michiharu Tsukamoto.
+* The Pillars of Computation Theory: State, Encoding, Nondeterminis, Arnold L. Rosenberg.
