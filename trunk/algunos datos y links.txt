@@ -79,3 +79,27 @@ En esta nota de la nacion, salen varios links que pueden servir..
 Explica que hace y como funciona Seti (muy cortito).ç
 http://www.lanacion.com.ar/nota.asp?nota_id=1204531
 
+
+----------------------------------------------------------------
+El Cern utiliza BOINC: http://cdsweb.cern.ch/record/1092443
+
+-----------------------------------------------------------------
+Arquitecturas:
+La arquitectura de boinc: http://www.boinc-wiki.info/BOINC_System_Architecture#BOINC_System_Architecture
+sitio no oficial.
+
+La arquitectura de xtreamweb sin dibujitos:
+http://www.xtremweb.net/introduction.html
+tiene un apartado de General Architecture explicando..
+si le metemos ganas, el fanchute de aca se lee http://www.google.com.ar/imgres?imgurl=http://ditwww.epfl.ch/SIC/SA/SPIP/Publications/IMG/jpg/sp-05-page51.jpg&imgrefurl=http://ditwww.epfl.ch/SIC/SA/SPIP/Publications/spip.php%3Farticle914&usg=__ZJW5upihkHUNaMJPzHNRykqRLd8=&h=361&w=800&sz=88&hl=es&start=0&zoom=1&tbnid=Uzyx5lLZf8rOyM:&tbnh=93&tbnw=257&prev=/images%3Fq%3DXtremWeb%2Barchitecture%26um%3D1%26hl%3Des%26safe%3Doff%26sa%3DN%26biw%3D1004%26bih%3D580%26tbs%3Disch:10%2C3&um=1&itbs=1&iact=hc&vpx=128&vpy=295&dur=3460&hovh=151&hovw=334&tx=139&ty=79&ei=hl-NTJ_9CIL7lwfM9vhg&oei=hl-NTJ_9CIL7lwfM9vhg&esq=1&page=1&ndsp=13&ved=1t:429,r:6,s:0&biw=1004&bih=580
+y tiene un diagramita..
+
+este creo que es un sistemita que corre en xtreamweb, http://www.google.com.ar/imgres?imgurl=http://dghep.lal.in2p3.fr/lal/doc/architecture.jpg&imgrefurl=http://dghep.lal.in2p3.fr/lal/doc/xwhep.html&usg=__I1isbMLJIb7UJhNemMo55mCML50=&h=423&w=764&sz=142&hl=es&start=0&zoom=1&tbnid=1H5nY_2U-d-2VM:&tbnh=134&tbnw=189&prev=/images%3Fq%3DXtremWeb%2Barchitecture%26um%3D1%26hl%3Des%26safe%3Doff%26sa%3DN%26biw%3D1004%26bih%3D580%26tbs%3Disch:10%2C231&um=1&itbs=1&iact=hc&vpx=120&vpy=183&dur=454&hovh=135&hovw=243&tx=149&ty=78&ei=hl-NTJ_9CIL7lwfM9vhg&oei=hl-NTJ_9CIL7lwfM9vhg&esq=1&page=1&ndsp=13&ved=1t:429,r:9,s:0&biw=1004&bih=580
+con algo de arquitectura..
+
+Xgrid Arq:
+ Sale algo en wikipedia.. http://en.wikipedia.org/wiki/Xgrid con imagenes en:
+http://www.google.com.ar/imgres?imgurl=http://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Xgridprotocol.svg/400px-Xgridprotocol.svg.png&imgrefurl=http://en.wikipedia.org/wiki/Xgrid&usg=__JW4sfzEeXB7ZKTz66B5Yl9VSnMU=&h=331&w=400&sz=40&hl=es&start=0&zoom=1&tbnid=jFGgMAF4R5JriM:&tbnh=131&tbnw=158&prev=/images%3Fq%3Dxgrid%2Barchitecture%26um%3D1%26hl%3Des%26safe%3Doff%26biw%3D1004%26bih%3D580%26tbs%3Disch:10%2C57&um=1&itbs=1&iact=hc&vpx=714&vpy=283&dur=5114&hovh=204&hovw=247&tx=101&ty=127&ei=3GCNTNjzKIW8lQfbzflf&oei=3GCNTNjzKIW8lQfbzflf&esq=1&page=1&ndsp=14&ved=1t:429,r:13,s:0&biw=1004&bih=580
+unofficial wiki: http://tengrid.com/TenGrid/index.html
+Tipo de licencia: PROPIETARIA!..
+
