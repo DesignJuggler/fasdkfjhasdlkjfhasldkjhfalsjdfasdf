@@ -1,0 +1,81 @@
+Estoy en winchows, asi que veo de poner algunos datos por aca,
+y despues los meto en el trabajo final.
+
+------------------------------------------------------
+Boinc y computacion voluntaria:
+de aca se pueden sacar varios datos y proyectos.
+Diferencias con grid computing (a nivel petete.. pero sirve)
+http://www.seti.cl/aprendiendo-mas-sobre-boinc-y-la-computacion-voluntaria/
+
+Alrededor del mundo, un millón de computadores participan en computación voluntaria (volunteer computing) entregando 1.5 petaflops de poder computacional a los científicos.
+
+¿Es todo esto lo que se llama computación en Red (Grid Computing)?, David Anderson, director de Seti@home y fundador de BOINC, dice que “no”.
+
+La “Computación voluntaria” permite a las personas donar el uso de sus PC a proyectos científicos. Algunos ejemplos incluyen GIMPS, Distributed.net, Seti@home y Folding@home. Hoy, la computación voluntaria está siendo usada en Biología, estudio del Clima, análisis de epidemias, física y mucho más y la mayoría de estos proyectos usan el software  BOINC.
+
+Conceptos de BOINC: ¿Computación Voluntaria o Computación en Red? image
+
+En cambio, la computación en Red “Grid Computing” permite a las organizaciones tales como empresas, laboratorios de investigación y Universidades compartir recursos computacionales. Globus y Condor son conocidos por usar software Grid.
+
+La pregunta es: ¿Es la computación voluntaria una forma de computación en Red? Ambas son parte de una rama más grande llamada “Computación distribuida” que trata de usar de una mejor manera los recursos computacionales existentes. Sin embargo, son distintos en varios aspectos.
+
+Veamos algunos de los más inportantes:
+
+1.La computación voluntaria debe acercar a los Amateurs.
+Los recursos voluntarios son de propiedad y manejados por gente común, no por profesionales TI (Tecnologías de Información). Por tanto, el software debe ser simple de instalar, no puede pedir versiones o configuraciones específicas de sistemas operativos, y debe auto-repararse.
+
+Conceptos de BOINC: ¿Computación Voluntaria o Computación en Red? image
+
+2.La computación voluntaria debe tolerar a los hackers.
+Los voluntarios son anónimos, y aquellos que tienen un mal comportamiento, quizás por devolver resultados computacionales incorrectos o que piden créditos por trabajo que no han realizado, no pueden ser despedidos ni acusados. Los software de computación voluntaria deben acomodarse a la posibilidad de tales malos comportamientos, por ejemplo, ejecutar cada unidad de trabajo en dos computadores y comparar los resultados.
+
+3.La computación voluntaria “tira” pero no “empuja”
+Los recursos de los voluntarios están detrás de firewalls que a veces no permiten las conexiones de red que van llegando. Esto requiere un modelo Pull en la cual el PC solicita periódicamente unidades de trabajo a un servidor central, en vez del modelo “Push” que se usa en la mayoría del software en Red “Grid”.
+
+4.La computación voluntaria es un asunto unilateral
+La Computación Grid es generalmente simétrica: una organización puede prestar recursos un día y proveerlos después, la computación voluntaria, al contrario, es asimétrica: los voluntarios proveen recursos computacionales a los proyectos, y no de vuelta.
+
+5.La computación voluntaria demanda grandes relaciones públicas.
+La computación voluntaria recae en los voluntarios. Así que los científicos que quieren tener acceso a la computación voluntaria no pueden “comprar la voluntariedad de la gente”, sino mas bien deben persuadir al público a que su investigación vale la pena. Es por esto que la divulgación científica es de gran beneficio.
+
+Asi que, aunque a los periodista seguramente seguirán confundiendo la computación voluntaria y la computación en Red (“Grid”), son fieras muy diferentes. Usan diferentes capacidades, diferente software y requieren diferentes habilidades y perspectivas de parte de sus usuarios.
+
+Autor: David P. Anderson
+Fuente: International Science Grid
+Traducción: Seti.cl
+
+------------------------------------------------------
+
+Proyectos: http://futur3.com/?p=21
+
+El proyecto GIMPS (Great Internet Mersenne Prime Search) es considerado como uno de los primeros proyectos de computación voluntaría, y se remonta al año 1.995. Posteriormente se hicieron relativamente famosos otros proyectos como los de cracking de algoritmos criptográficos de distributed.net en 1.997 o el proyecto SETI@Home en 1.999, el cual dió pie al desarrollo de BOINC (Berkeley Open Infraestructure for Network Computing). Actualmente hay toda una variedad de proyectos de computación distribuida en donde participar.
+
+Tiene algunos puntos lindos:
+* tiene un calculito lindo de como solo en españa, se alcanzaria mas velocidad que el roadrunner.
+* Computación Voluntaria vs Computación Grid
+* Superordenador vs Grid
+
+---------------------------------------------------------
+
+El problema de las N Reinas; el proyecto BOINC hecho en Chile 
+
+Algo muy ñoño pero que enseñan en famaf..
+
+http://www.seti.cl/el-problema-de-las-n-reinas-el-proyecto-boinc-hecho-en-chile/
+
+------------------------------------------------------------
+
+Mas proyectos en boinc: http://www.mrboinc.com/
+
+-------------------------------------------------------------
+Una de Taringa:
+http://www.taringa.net/posts/noticias/960825/La-Play-3-hace-investigaciones-biomedicas-_computacion-dis.html
+Seguro se puede buscar otra fuente, pero lo importante es que usan la play3 para computacion voluntaria..
+http://www.ps3grid.net/
+
+
+-------------------------------------------------------------
+En esta nota de la nacion, salen varios links que pueden servir..
+Explica que hace y como funciona Seti (muy cortito).ç
+http://www.lanacion.com.ar/nota.asp?nota_id=1204531
+
