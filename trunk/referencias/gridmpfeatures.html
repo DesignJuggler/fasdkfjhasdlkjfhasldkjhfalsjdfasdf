@@ -1,0 +1,537 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+
+	
+<title>Univa UD, Inc. &#8482; - Grid MP - Features and Components</title>
+
+<meta name="keywords" content="open source, grid, grid computing, high performance computing, hpc, cluster, grid mp, united devices, univa, grid leaders, open source grid, open source cluster, cluster software, grid software, grid computing technology, grid software, globus toolkit, cluster computing software, data clustering software, grid computing services, grid web services, grid consulting, grid consultant, cluster deployment, cluster implementation, cluster software support, grid deployment, grid implementation, grid installation, grid software support">
+<meta name="description" content="Univa is the leading provider of high-performance computing (HPC) systems management software for the complete distributed computing lifecycle.  Univa products simplify the complex nature of deploying and operating cluster and grid computing environments and save customers time and resources while giving them confidence that their solution will perform as expected.  Hundreds of Global 2000 companies come to Univa to build and operate their HPC infrastructures, from small-scale work group clusters to enterprise grids. With a community-enabled open source model and a focus on making business easier for our customers, Univa is advancing the vision and practice of HPC. Visit us at www.univaud.com.">
+
+<style type="text/css">
+	/* VERY TOP TEXT NAV */
+	#navone .nav1 { color: #2675af !important; font-weight:bold !important; } /* turn font highlight blue */
+	
+	/* TOP NAV BUTTONS */
+	#navlist .nav5 { background:url('/img/nav_products.png') 0 -50px no-repeat !important; } /* turn font highlight blue */
+	
+	/*SECONDAY NAV STYLES */
+	a.secnav6 { color: #231f20 !important; background:url('/img/bullet_on.png') no-repeat left 10px !important; } /* turn bullet to green */
+	
+	/* TERTIARY NAV STYLES */
+	.tertnavlist6 { display: block !important; } /* set tertiary visible */
+	.tert1 { color: #90b22d !important; }
+</style>
+
+    <meta name="expires" http-equiv="expires" content="0">
+	<meta name="cache-control" http-equiv="cache-control" content="no-cache, must-revalidate">
+	<meta name="content-type" http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+	<meta name="author" content="">
+
+	<link rel="SHORTCUT ICON" href="http://www.univaud.com/favicon.ico">
+			
+	<!-- DEFAULT PAGE STYLES -->
+	<link rel="stylesheet" href="gridmpfeatures_files/default.css" type="text/css">
+	<link rel="stylesheet" href="gridmpfeatures_files/tabs.css" type="text/css">
+    
+	<!-- JQUERY 1.3.2 -->
+    <script src="gridmpfeatures_files/jquery-1.js" type="text/javascript"></script>
+  	<script src="gridmpfeatures_files/jquery-ui-1.js" type="text/javascript"></script>
+    <script src="gridmpfeatures_files/jquery.js" type="text/javascript"></script>
+
+	<!-- FLASH SCRIPT -->
+	<script src="gridmpfeatures_files/AC_RunActiveContent.html" type="text/javascript"></script>
+    
+</head><body>
+<a href="#skipnav" title="Skip navigation and read content"></a>
+
+<!-- START PAGE -->
+<div id="wrapper">
+    <!-- START NAVIGATION -->
+    <ul id="navone">
+		<li style="float: left; padding-left: 30px;"><a href="http://www.univaud.com/index.php" class="nav0">Home</a></li><li><a href="http://www.univaud.com/hpc/" class="nav1">HPC<span style="opacity: 0;" class="hover"></span></a></li><li><a href="http://www.univaud.com/datacenter/" class="nav2">Data Center<span style="opacity: 0;" class="hover"></span></a></li><li><a href="http://www.univaud.com/managed-services/" class="nav3">Managed Services<span style="opacity: 0;" class="hover"></span></a></li><li>|</li><li><a href="http://www.univaud.com/about/" class="nav4">Company<span style="opacity: 0;" class="hover"></span></a></li><li><a href="http://www.univaud.com/about/news/" class="nav5">News<span style="opacity: 0;" class="hover"></span></a></li><li><a href="http://www.univaud.com/about/news/events.php" class="nav9">Events</a></li><li><a href="http://www.univaud.com/about/resources/" class="nav6">Resources<span style="opacity: 0;" class="hover"></span></a></li><li><a href="http://www.univaud.com/partners/" class="nav7">Partners</a></li><li><a href="http://www.univaud.com/about-cloud/" class="nav8">About Cloud</a></li><li style="padding-right: 25px;"><a href="http://www.univaud.com/about/contact/" class="nav9">Contact</a></li>    </ul>    
+    <div id="navcontainer">
+    
+    <a href="http://www.univaud.com/index.php" title="Return to Univa UD Home" style="float: left;"><img src="gridmpfeatures_files/___.gif" height="50" width="170"></a>
+    
+    <ul id="navlist">
+    	<!--<li><a href="/hpc/" title="HPC Home">HPC Home</a></li>-->
+    	<li><a href="http://www.univaud.com/hpc/solutions/" class="nav2" title="Solutions"><span>Solutions</span><span style="opacity: 0;" class="hover"></span></a>
+        	<ul>
+            <li><a href="http://www.univaud.com/hpc/solutions/clusters.php" title="Clusters">Clusters</a></li>
+            <li><a href="http://www.univaud.com/hpc/solutions/clouds.php" title="Clouds">Clouds</a></li>
+            <li><a href="http://www.univaud.com/hpc/solutions/desktops.php" title="Desktops">Desktops</a></li>
+            <li><a href="http://www.univaud.com/hpc/solutions/grids.php" title="Grids">Grids</a></li>
+            <li><a href="http://www.univaud.com/hpc/solutions/monitoring-analytics.php" title="Reporting and Analytics">Reporting &amp; Analytics</a></li>
+            </ul>
+        </li> 
+        <li><a href="http://www.univaud.com/hpc/products/" class="nav5" title="Products"><span>Products</span><span style="opacity: 0;" class="hover"></span></a>
+        	<ul>
+            <li><a href="http://www.univaud.com/hpc/products/unicluster/" title="UniCluster">UniCluster</a></li>
+            <li><a href="http://www.univaud.com/hpc/products/unicloud.php" title="UniCloud">UniCloud</a></li>
+            <li><a href="http://www.univaud.com/hpc/products/uniportal.php" title="UniPortal">UniPortal</a></li>
+            <li><a href="http://www.univaud.com/hpc/products/uniplan.php" title="UniPlan">UniPlan</a></li>            
+            <li><a href="http://www.univaud.com/hpc/products/unisight.php" title="UniSight">UniSight</a></li>  
+            <li><a href="http://www.univaud.com/hpc/products/about-reliance.php" title="Reliance">Reliance</a></li>          
+            <li><a href="http://www.univaud.com/hpc/products/grid-mp/" title="Grid MP">Grid MP</a></li>
+            <li><a href="http://www.univaud.com/hpc/products/intel-cluster-ready.php" title="Intel Cluster Checker">Intel Cluster Checker</a></li>
+            <!--<li><a href="/hpc/products/datacatalyst.php" title="DataCatalyst">DataCatalyst</a></li>-->
+            </ul>
+        </li>       
+        <li><a href="http://www.univaud.com/hpc/industries/" class="nav6" title="Industries"><span>Industries</span><span style="opacity: 0;" class="hover"></span></a>
+        	<ul>
+            <li><a href="http://www.univaud.com/hpc/industries/life-sciences/" title="Life Sciences">Life Sciences</a></li>
+            <li><a href="http://www.univaud.com/hpc/industries/energy-oil-gas/" title="Energy / Oil &amp; Gas">Energy / Oil &amp; Gas</a></li>
+            <li><a href="http://www.univaud.com/hpc/industries/telco/" title="Telco">Telco</a></li>
+            <li><a href="http://www.univaud.com/hpc/industries/eda/" title="Electronics Design">Electronics Design</a></li>
+            <li><a href="http://www.univaud.com/hpc/industries/manufacturing/" title="Manufacturing">Manufacturing</a></li>
+            <li><a href="http://www.univaud.com/hpc/industries/government/" title="Government">Government</a></li>
+            <li><a href="http://www.univaud.com/hpc/industries/academia/" title="Academia">Academia</a></li>
+            </ul>
+        </li>
+        <li><a href="http://www.univaud.com/hpc/services/" class="nav4" title="Services &amp; Support"><span>Services &amp; Support</span><span style="opacity: 0;" class="hover"></span></a>
+        	<ul>
+            <li><a href="http://www.univaud.com/hpc/services/cluster-migration.php" title="Cluster Migration">Cluster Migration</a></li>
+            <li><a href="http://www.univaud.com/hpc/services/cluster-management.php" title="Cluster Management">Cluster Management</a></li>
+            <li><a href="http://www.univaud.com/hpc/services/cloud-enablement.php" title="Cloud Enablement">Cloud Enablement</a></li>
+            <li><a href="http://www.univaud.com/hpc/services/training.php" title="Training">Training</a></li>            
+            <li><a href="http://www.univaud.com/hpc/services/support-offerings.php" title="Service Offerings">Support Offerings</a></li>
+            <li><a href="http://support.univaud.com/" title="Customer Support">Customer Support</a></li>
+            </ul>
+        </li>
+        <li style="padding-right: 0px;"><img src="gridmpfeatures_files/nav_rt.png" alt="" height="50" width="5"></li>   
+    </ul>
+    
+    </div>
+    <!-- END -->
+    
+    <!-- START CONTENT -->
+    <div id="content">    <!-- SECONDARY NAVIGATION START -->
+	<table class="frame" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody><tr valign="top">
+    	<td width="206">
+        <div id="secnav">
+        <ul id="secnavlist">
+        	<li class="title"><a href="http://www.univaud.com/hpc/products/">Products</a></li>
+            <li><a href="http://www.univaud.com/hpc/products/unicluster/" class="secnav1">UniCluster</a>
+                <!-- start tertiary nav -->
+                <ul class="tertnavlist1">
+					<li><a href="http://www.univaud.com/hpc/products/unicluster/learn.php" class="tert1">Learn</a>
+                    	<!-- start quat nav -->
+                        <ul class="quatnavlist1">
+                        <li><a href="http://www.univaud.com/hpc/products/unicluster/whats-new.php" class="quat1">What's New in 4.1</a></li>
+                        <li><a href="http://www.univaud.com/hpc/products/unicluster/features.php" class="quat2">Features &amp; Components</a></li>
+                        <li><a href="http://www.univaud.com/hpc/products/unicluster/value-benefits.php" class="quat3">Value and Benefits</a></li>
+                        <li><a href="http://www.univaud.com/hpc/products/unicluster/how-its-better.php" class="quat4">How It's Better</a></li>
+                        <li><a href="http://www.grid.org/documentation" target="_blank">Documentation</a></li>
+                        <li><a href="http://www.univaud.com/hpc/products/unicluster/opensourcelicenses.php" class="quat5">Open Source Licenses</a></li>
+                        <li><a href="http://www.univaud.com/about/contact/request-info.php">Request Info</a></li>
+                        </ul>
+                    	<!-- end quaternary nav -->
+                    </li>    
+                	<li><a href="http://www.univaud.com/hpc/products/unicluster/try.php" class="tert2">Try</a>
+                        <!-- start quaternary nav -->
+                        <ul class="quatnavlist2">
+                        <li><a href="http://www.grid.org/downloads" target="_blank">Download Now</a></li>
+                        <li><a href="http://www.univaud.com/about/contact/request-info.php">Request a Demo</a></li>
+                        </ul>
+                        <!-- end quaternary nav -->
+                    </li>    
+                	<li><a href="http://www.univaud.com/hpc/products/unicluster/buy.php" class="tert3">Buy</a>
+                        <!-- start quaternary nav -->
+                        <ul class="quatnavlist3">
+                        <li><a href="http://www.univaud.com/hpc/products/unicluster/subscribe.php" class="quat1">Subscribe Now</a></li>
+                        <li><a href="http://www.univaud.com/hpc/products/unicluster/purchase-add-ons.php" class="quat2">Purchase Add-ons</a></li>
+                        <li><a href="http://www.univaud.com/hpc/products/unicluster/renew.php" class="quat3">Renew Online</a></li>
+                        <li><a href="http://www.univaud.com/hpc/products/unicluster/special-pricing.php" class="quat4">Special Pricing For SGE Users</a></li>
+                        <li><a href="http://www.univaud.com/about/contact/">Contact Sales</a></li>
+                        </ul>
+                        <!-- end quaternary nav -->
+                    </li>
+                    <li><a href="http://www.univaud.com/hpc/products/unicluster/use.php" class="tert4">Use</a>
+                        <!-- start quaternary nav -->
+                        <ul class="quatnavlist4">
+                        <li><a href="http://www.univaud.com/hpc/services/support-offerings.php">Support</a></li>
+                        <li><a href="http://www.univaud.com/hpc/services/">Services</a></li>
+                        <li><a href="http://groups.grid.org/" target="_blank">Community</a></li>
+                        </ul>
+                        <!-- end quaternary nav -->
+                    </li>
+                </ul>
+                <!-- end tertiary nav -->
+            </li>
+            
+            <li><a href="http://www.univaud.com/hpc/products/unicloud.php" class="secnav3">UniCloud</a>
+                <!-- start tertiary nav -->
+            	<ul class="tertnavlist3">
+                	<li><a href="http://www.univaud.com/hpc/products/unicloud-use-cases.php" class="tert1">Top Use Cases</a></li>
+                	<!--<li><a href="/hpc/products/unicloud-benchmark-report.php" class="tert4">Benchmark Report</a></li>-->
+                    <li><a href="http://www.univaud.com/hpc/products/unicloud-schedule-live-demo.php" class="tert2">Schedule Live Demo</a></li>
+                	<li><a href="http://www.univaud.com/hpc/products/unicloud-buy.php" class="tert3">Buy Now</a></li>
+                </ul>
+                <!-- end tertiary nav -->                
+            </li>
+            
+            <li><a href="http://www.univaud.com/hpc/products/uniportal.php" class="secnav2">UniPortal</a>
+                <!-- start tertiary nav -->
+            	<ul class="tertnavlist2">
+                    <li><a href="http://www.univaud.com/hpc/products/uniportal-features.php" class="tert1">Key Features</a></li>
+                    <li><a href="http://www.univaud.com/hpc/products/uniportal-value-benefits.php" class="tert2">Value and Benefits</a></li>
+                    <li><a href="http://www.univaud.com/hpc/products/uniportal-why.php" class="tert3">Why UniPortal?</a></li>
+                    <li><a href="http://www.univaud.com/hpc/products/uniportal-buy.php" class="tert4">Buy Now</a></li>
+                </ul>
+                <!-- end tertiary nav -->
+            </li>
+            <li><a href="http://www.univaud.com/hpc/products/uniplan.php" class="secnav8">UniPlan</a>
+                <!-- start tertiary nav -->
+            	<ul class="tertnavlist8">
+                    <li><a href="http://www.univaud.com/hpc/products/uniplan-buy.php" class="tert1">Buy Now</a></li>
+                </ul>
+                <!-- end tertiary nav -->
+            </li>
+            
+            <li><a href="http://www.univaud.com/hpc/products/unisight.php" class="secnav4">UniSight</a>
+                <!-- start tertiary nav -->            	
+                <ul class="tertnavlist4">
+                	<li><a href="http://www.univaud.com/hpc/products/unisight-buy.php" class="tert1">Buy Now</a></li>
+                </ul>
+                <!-- end tertiary nav -->                
+            </li>  
+            <li><a href="http://www.univaud.com/hpc/products/about-reliance.php" class="secnav5">Reliance</a></li>                      
+            <li><a href="http://www.univaud.com/hpc/products/grid-mp/" class="secnav6">Grid MP</a>
+                <!-- start tertiary nav -->            	
+                <ul class="tertnavlist6">
+                    <li><a href="http://www.univaud.com/hpc/products/grid-mp/features.php" class="tert1">Features and Components</a></li>
+                    <li><a href="http://www.univaud.com/hpc/products/grid-mp/value-benefits.php" class="tert2">Value and Benefits</a></li>
+                    <li><a href="http://www.univaud.com/hpc/products/grid-mp/how-its-better.php" class="tert3">How It's Better</a></li>
+                    <li><a href="http://www.univaud.com/hpc/products/grid-mp/gridmp-buy.php" class="tert4">Buy Now</a></li>
+                    <li><a href="http://www.univaud.com/hpc/products/grid-mp/schedule-live-demo.php" class="tert5">Schedule Live Demo</a></li>					
+                    <li><a href="http://www.univaud.com/about/resources/">Literature</a></li>
+                    <li><a href="http://www.univaud.com/about/resources/case-studies.php">Case Studies</a></li>
+                    <li><a href="http://www.univaud.com/about/testimonials.php">Testimonials</a></li>
+                    <li><a href="http://www.univaud.com/hpc/services/support-offerings.php">Support</a></li>
+                    <li><a href="http://www.univaud.com/about/contact/request-info.php">Request Info</a></li>
+                </ul>
+                <!-- end tertiary nav -->                
+            </li>
+            <li><a href="http://www.univaud.com/hpc/products/intel-cluster-ready.php" class="secnav7">Intel Cluster Checker</a>
+                <!-- start tertiary nav -->               
+                <ul class="tertnavlist7">
+            		<li><a href="http://www.univaud.com/hpc/products/intel-info.php" class="tert1">Get More Information</a></li>
+            	</ul>
+                <!-- end tertiary nav -->                
+            </li>
+            <!--<li><a href="/hpc/products/datacatalyst.php" class="secnav8">DataCatalyst</a>
+          	
+                <ul class="tertnavlist8">
+            		<li><a href="/hpc/products/datacatalyst-buy.php" class="tert1">Buy Now</a></li>
+            	</ul>
+         
+            </li>-->
+        </ul>
+        </div>
+        </td>
+        <!-- END -->
+        <!-- MIDDLE CONTENT BEGIN -->
+        <td class="main" width="100%">
+        <a name="skipnav"></a>        
+        
+        		        
+        <div id="breadnav" style="margin: 0pt 0pt 8px; font-size: 8pt ! important;">
+			<script language="javascript" src="gridmpfeatures_files/breadnav.js"></script><span class="crumb"><a href="http://www.univaud.com/">Home</a></span> » <span class="crumb"><a href="http://www.univaud.com/hpc">HPC</a></span> » <span class="crumb"><a href="http://www.univaud.com/hpc/products">Products</a></span> » <span class="crumb"><a href="http://www.univaud.com/hpc/products/grid-mp">Grid MP</a></span>
+            » Features &amp; Components        </div>	
+	<a href="http://www.univaud.com/hpc/products/grid-mp/q109-offer.php?source=web%20site"><img src="gridmpfeatures_files/gridmp-cloud-banner.gif" alt="Grid MP in the Cloud" style="float: left; margin-bottom: 20px;" border="0"></a>
+    
+    <div style="float: right; width: 158px;">
+
+		<!--<ul class="listR">
+		<li><a href="/hpc/products/unicluster/oracle.php"><img src="/img/rt-oracle.gif" alt="Oracle Unbreakable Linux Support" /></a></li>
+		<li><a href="/hpc/cs-data-processing-amazon-ec2.php"><img src="/img/rt-cloud.gif" alt="UniCloud Case Study" /></a></li>
+        <li><a href="/hpc/services/migration-assessment.php"><img src="/img/rt-migrate.gif" alt="Migrate from LSF" /></a></li>
+        <li><a href="/about/resources/videos.php"><img src="/img/rt-videobriefs.gif" alt="Watch The Video Briefs" /></a></li>
+		<li><a href="/condor/offer/"><img src="/img/rt-condor.gif" alt="Condor Users: Special Pricing" border="0" /></a></li>
+        <li><a href="http://www.grid.org/downloads" target="_blank"><img src="/img/rt-download.gif" alt="Download Now" /></a></li>
+        <li><a href="http://groups.grid.org/" target="_blank"><img src="/img/rt-community.gif" alt="Join the Community" /></a></li> 
+        <li><a href="/hpc/products/getting-started/switching.php"><img src="/img/rt-switch.gif" alt="Switch to Univa UD" /></a></li>        
+		<li><a href="/about/contact/request-info.php"><img src="/img/rt-moreinfo.gif" alt="Request More Information" /></a></li>
+        </ul>-->
+
+    
+        <!-- BEGIN BOX -->
+       <div class="boxwrap">
+	   <div class="box">
+        	<div class="dload" style="position: relative;"> <!-- this div has positioning and text-wrapping hack -->
+         	<h3>Schedule LIVE Demo</h3>
+            <img src="gridmpfeatures_files/icon-demo.png" style="padding: 0pt 0pt 2px; float: left;">
+            <p style="position: absolute; top: 25px; left: 80px; width: 80px;">See UniCloud in a range of live scenarios</p>
+			<p style="clear: both;"><a href="http://www.univaud.com/hpc/products/unicloud-schedule-live-demo.php">Find out more »</a></p>
+			</div>
+		</div>	
+        </div>
+        <div class="boxwrap">
+        <div class="box">
+        	<div class="dload">        
+         	<h3>ROI White Paper</h3>
+            <p><img src="gridmpfeatures_files/icon_doc.gif"></p>
+            <p>Fortune 100 Company Saves Millions with Grid MP<br><a href="http://www.univaud.com/hpc/wp-fortune100-roi.php">Download now »</a></p>
+        	</div>
+        </div>
+        </div>
+        <div class="boxwrap">
+        <div class="box">   
+        	<div class="dload">                    
+            <h3>Tabor Research Paper</h3>
+            <p><img src="gridmpfeatures_files/doc_tabor.gif"></p>
+            <p>Univa's Strategy For Subduing the Complex Software Monster<br><a href="http://www.univaud.com/about/resources/tabor-form.php">Download now »</a></p>
+			</div>
+        </div>
+        </div>
+ 
+		<h3>Grid MP in the Cloud</h3>
+        <p>Special offer for Grid MP users</p>
+        <p><a href="http://www.univaud.com/hpc/products/grid-mp/q109-offer.php?source=web%20site">Find out more »</a></p>
+        
+        <!--<div class="hr"></div>
+         
+         <h3>Learn More</h3>
+         <ul>
+         <li><a href="/hpc/products/grid-mp/features.php">Grip MP Features</a></li>
+         <li><a href="/hpc/services/cloud-enablement.php">Cloud Enablement</a></li>
+         <li><a href="/hpc/products/">HPC Products</a></li>
+         <li><a href="/about/resources/case-studies.php">Customer Case Studies</a></li>
+         <li><a href="/about/">About Univa</a></li>
+         </ul>--></div>
+	<div style="float: left; width: 510px;">
+    
+	<h1>Grid MP Features and Components</h1>
+	
+	<p>Grid MP has been named "Best Price-Performance Grid Middleware 
+Solution" and "Most Innovative Grid Management or Performance 
+Improvement Software."</p>
+	<p>Innovative and cost-effective. It doesn't get much better than that.</p>
+	<div class="hr"></div>
+    
+	<h2>Grid MP features include:</h2>
+	<ul class="list">
+	<li><strong>Uniquely engineered for non-dedicated HPC:</strong>  Grid 
+MP is the only technology designed from the ground up for large-scale, 
+disparate non-dedicated environments where compute devices are not 
+tightly controlled &#8211; so unpredictability is accounted for</li>
+	<li><strong>Proven, unparalleled scalability:</strong>  Grid MP was 
+built specifically for environments of massive scale &#8211; the product 
+regularly scales to thousands of production customer nodes</li>
+	<li><strong>Simple to operate and manage:</strong>  With a robust, 
+web-based GUI, decentralized management of resource allocation policies,
+ and automatic software update features for all code and program 
+modules, Grid MP is easy for customers to use and manage</li>
+	<li><strong>Fast, easy application on-boarding:</strong>  Grid MP 
+features a flexible, open, standards-based Web services interface for 
+integrating applications, and includes a Software Development Kit (SDK) 
+with detailed documentation, tools and examples.  Scores of commercial 
+applications have been integrated to run on Grid MP.</li>
+	<li><strong>Embedded meta-data layer for automatic tracking, reporting and validation:</strong>  Grid MP offers detailed reporting and monitoring of resources, users and jobs </li>
+	</ul>
+	<div class="hr"></div>
+    
+	<h2>Grid MP components include:</h2>
+	<table style="margin-bottom: 20px;" border="0" cellpadding="5" cellspacing="2" width="100%">
+	<tbody><tr valign="top">
+		<td class="hit_box_blue" width="22%"><strong>Component</strong></td>
+		<td class="hit_box_blue_brdr" valign="top" width="39%"><strong>Description</strong></td>
+        <td class="hit_box_blue_brdr" valign="top" width="39%"><strong>Benefits</strong></td>
+	</tr>
+	<tr valign="top">
+		<td class="hit_box_blue">Virtualization, Provisioning and Control</td>
+		<td class="hit_box_blue_brdr" valign="top">
+		<ul class="list">
+		<li>Single virtual interface to access SMP, cluster, server, workstation and desktop devices </li>
+		<li>Resource grouping based on capability, geography &amp; organization </li>
+		<li>Decentralized management of resource allocation policies</li>
+		</ul></td>
+        <td class="hit_box_blue_brdr" valign="top">
+		<ul class="list">
+		<li>Ability to maintain control of environment</li> 
+		<li>Optimized resource allocation for better performance</li>
+		<li>Improved manageability </li>
+		</ul></td>
+	</tr>
+	<tr valign="top">
+		<td class="hit_box_blue">Secure Execution and Automation Layer (SEAL) Technology</td>
+		<td class="hit_box_blue_brdr" valign="top">
+		<ul class="list">
+		<li>Secure runtime environment protects application execution from tampering and interception </li>
+		<li>Automatic encryption and compression of data over the network and during storage (for non-dedicated resources)</li> 
+		<li>Digital signature validation of executable code modules</li>
+		</ul></td>
+        <td class="hit_box_blue_brdr" valign="top">
+		<ul class="list">
+		<li>Protection for users, applications and data</li>
+		<li>System reliability</li>
+		</ul></td>
+	</tr>
+	<tr valign="top">
+		<td class="hit_box_blue">Advanced Workload Optimization</td>
+		<td class="hit_box_blue_brdr" valign="top">
+		<ul class="list">
+		<li>Scheduling based on job priority, resource constraints, fair share, and more</li> 
+		<li>Automatic job rescheduling in the presence of failures </li>
+		<li>Scheduling based on affinity for cached data </li>
+		<li>Application checkpointing for improved workload processing performance</li>
+		</ul></td>
+        <td class="hit_box_blue_brdr" valign="top">
+		<ul class="list">
+		<li>Optimized performance and throughput</li>
+		<li>Automation for reduced management overhead</li>
+		<li>Maximized ROI on existing resources</li>
+		</ul></td>
+	</tr>
+	<tr valign="top">
+		<td class="hit_box_blue">Industry-Leading Application Framework</td>
+		<td class="hit_box_blue_brdr" valign="top">
+		<ul class="list">
+		<li>Simple command-line launch of sequential batch or tightly-coupled parallel (MPI, PVM, etc.)</li> 
+		<li>Open, standards-based Web services interface for integrating applications </li>
+		<li>End-user transparency &#8211; application users continue to use the same interface </li>
+		<li>Software Development Kit (SDK) with detailed documentation, tools and examples</li> 
+		<li>Application scripting can be done using several different languages and operating systems </li>
+		</ul></td>
+        <td class="hit_box_blue_brdr" valign="top">
+		<ul class="list">
+		<li>Fast, easy application on-boarding</li><li>Ease of application use and management</li><li>Improved application utilization and value</li>
+		</ul></td>
+	</tr>
+	<tr valign="top">
+		<td class="hit_box_blue">Seamless Integration with Enterprise Environments</td>
+		<td class="hit_box_blue_brdr" valign="top">
+		<ul class="list">
+		<li>Scalable component architecture capable of concurrently handling thousands of devices and jobs </li>
+		<li>Automatic software update features for all code and program modules </li>
+		<li>Web-based management console </li>
+		<li>Detailed reporting and monitoring of resources, users and jobs</li>
+		<li>Support for Internet Protocol Version 6 (IPv6) </li>
+		<li>Broad support for a wide range of web browsers and agent operating systems </li>
+		</ul></td>
+        <td class="hit_box_blue_brdr" valign="top">
+		<ul class="list">
+		<li>Scalable solution for business growth</li>
+		<li>Increased visibility into infrastructure utilization</li>
+		<li>Simplified installation and management</li>
+		<li>Reduced TCO</li>
+		</ul></td>
+	</tr>
+	</tbody></table>
+	
+	<ul class="arrow">
+	<li><a href="http://www.univaud.com/about/resources/case-studies.php">Read about our customer successes</a></li>
+	<li><a href="http://www.univaud.com/about/contact/request-info.php">Request more information</a></li>
+	</ul>
+    
+    </div>
+
+    <!-- END MAIN CONTENT -->
+    </td>
+    <!-- MID CONTENT END -->
+    <!-- BEGIN RIGHT COLUMN -->
+    <td class="rtcol">        
+        
+
+    </td></tr></tbody></table><!-- END RIGHT / TABLE COLUMN -->    
+	</div>
+    <!-- END CONTENT -->
+
+    <!-- START PAGE FOOTER -->	 
+    <div id="footer">
+    	<ul class="footerlink">
+        	<li><a href="http://www.univaud.com/index.php" title="Home">Home</a></li>
+            <li><a href="http://www.univaud.com/about/" title="Company">Company</a></li>
+            <li><a href="http://www.univaud.com/about/contact/" title="Contact">Contact</a></li>
+            <li><a href="http://www.univaud.com/privacy.php" title="Privacy">Privacy</a></li>
+            <li><a href="http://www.univaud.com/sitemap.php" title="Site Map">Site Map</a></li>
+            <li>|</li>
+            <li>Copyright © 2010</li>
+            <li style="margin-left: 400px;"><a href="http://www.univaud.com/index.php" title="Return to Univa Home"><img src="gridmpfeatures_files/___.gif" height="20" width="75"></a></li>
+        </ul>
+        
+    <div id="mboy" style="margin: 18px 0pt 5px 780px;"><a href="http://www.monkee-boy.com/" title="Austin Web Site Design Development" target="_blank" class="gray">site by monkee-boy | austin, tx</a></div>        
+    </div>
+	
+</div>
+<!-- END PAGE -->
+
+    <!-- JQUERY FUNCTIONS -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+
+	$('a.button').wrapInner('<span class="content"></span>').append('<div class="right"></div><div class="left"></div>');
+
+		<!-- service menu fade in / out -->
+
+		var navnum = [ "1", "2", "3", "4", "5", "6" ];
+
+		$.each(navnum, function(index, item) {
+			$('.nav' + item).append('<span class="hover"></span>').each(function () {
+			  var $span = $('> span.hover', this).css('opacity', 0);
+				  $(this).hover(function () {
+					$span.stop().fadeTo(250, 1);
+				  }, function () {
+					$span.stop().fadeTo(500, 0);
+				  });
+			});
+		});
+		
+		<!-- end -->
+			
+	});
+	</script>
+    <!-- END -->
+    
+	<!-- TOP NAV DROP DOWN NAVIGATION - IE6 -->
+	<script type="text/javascript"><!--//--><![CDATA[//><!--
+	sfHover = function() {
+		var sfEls = document.getElementById("navlist").getElementsByTagName("li");
+		for (var i=0; i<sfEls.length; i++) {
+			sfEls[i].onmouseover=function() {
+				this.className+=" sfhover";
+			}
+			sfEls[i].onmouseout=function() {
+				this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+			}
+		}
+	}
+	if (window.attachEvent) window.attachEvent("onload", sfHover);
+	//--><!]]></script>
+    <!-- END DROP DOWN -->     	
+
+	<!-- IMAGE PRE-LOADER -->
+    <script type="text/javascript">
+    var preloaded = new Array();
+    function preload_images() {
+        for (var i = 0; i < arguments.length; i++){
+            preloaded[i] = document.createElement('img');
+            preloaded[i].setAttribute('src',arguments[i]);
+        };
+    };
+    preload_images(
+        '/img/nav_homeon.gif',
+		'/img/nav_productson.gif',
+		'/img/nav_partnerson.gif',
+		'/img/companyon.gif',
+		'/img/resourceson.jpg',
+		'/img/contacton.jpg'
+    );
+	</script>
+    <!-- END PRE-LOADER -->
+
+	<!-- LeadLander Tracking Code -->	
+	<script type="text/javascript" language="javascript">llactid=16675</script> 
+	<script type="text/javascript" language="javascript" src="gridmpfeatures_files/trackalyze.js"></script><img src="gridmpfeatures_files/trackalyze.gif">
+    
+    <!-- GOOGLE ANALYTICS CODE HERE -->
+    <script src="gridmpfeatures_files/urchin.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+    _uacct = "UA-84377-17";
+    urchinTracker();
+    </script>
+
+</body></html>

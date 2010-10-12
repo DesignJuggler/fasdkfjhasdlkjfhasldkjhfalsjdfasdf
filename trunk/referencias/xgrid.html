@@ -1,0 +1,1420 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+	
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta name="generator" content="MediaWiki 1.15.3">
+		<meta name="keywords" content="Xgrid,$TEMPDIR,Cipher,Drone thread,NFS,Sandbox,Twinjob.pl,What is Xgrid,While idle,XGRID FAQ,Xgridstatus">
+		<link rel="shortcut icon" href="http://tengrid.com/favicon.ico">
+		<link rel="search" type="application/opensearchdescription+xml" href="http://tengrid.com/wiki1/opensearch_desc.php" title="TenGrid (en)">
+		<link title="Creative Commons" type="application/rdf+xml" href="http://tengrid.com/wiki1/index.php?title=Xgrid&amp;action=creativecommons" rel="meta">
+		<link rel="copyright" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+		<link rel="alternate" type="application/rss+xml" title="TenGrid RSS Feed" href="http://tengrid.com/wiki1/index.php?title=Special:RecentChanges&amp;feed=rss">
+		<link rel="alternate" type="application/atom+xml" title="TenGrid Atom Feed" href="http://tengrid.com/wiki1/index.php?title=Special:RecentChanges&amp;feed=atom">
+		<title>Xgrid - TenGrid</title>
+		<link rel="stylesheet" href="xgrid_files/shared.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="xgrid_files/commonPrint.css" type="text/css" media="print">
+		<link rel="stylesheet" href="xgrid_files/main.css" type="text/css" media="screen">
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/wiki1/skins/monobook/IE50Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/wiki1/skins/monobook/IE55Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/wiki1/skins/monobook/IE60Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/wiki1/skins/monobook/IE70Fixes.css?207" type="text/css" media="screen" /><![endif]-->
+		<link rel="stylesheet" href="xgrid_files/index_002.css" type="text/css">
+		<link rel="stylesheet" href="xgrid_files/index_003.css" type="text/css" media="print">
+		<link rel="stylesheet" href="xgrid_files/index_004.css" type="text/css">
+		<link rel="stylesheet" href="xgrid_files/index.css" type="text/css">
+		<!--[if lt IE 7]><script type="text/javascript" src="/wiki1/skins/common/IEFixes.js?207"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+		<script type="text/javascript">/*<![CDATA[*/
+		var skin = "monobook";
+		var stylepath = "/wiki1/skins";
+		var wgArticlePath = "/wiki1/index.php?title=$1";
+		var wgScriptPath = "/wiki1";
+		var wgScript = "/wiki1/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://tengrid.com";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Xgrid";
+		var wgTitle = "Xgrid";
+		var wgAction = "view";
+		var wgArticleId = "2";
+		var wgIsArticle = true;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "en";
+		var wgContentLanguage = "en";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 1364;
+		var wgVersion = "1.15.3";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = ["", ""];
+		var wgDigitTransformTable = ["", ""];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+		<script type="text/javascript" src="xgrid_files/wikibits.js"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="xgrid_files/ajax.js"></script>
+		<link rel="stylesheet" type="text/css" href="xgrid_files/shCore.css">
+		<link rel="stylesheet" type="text/css" href="xgrid_files/shThemeDefault.css">
+		<script type="text/javascript" src="xgrid_files/shCore.js"></script>
+		<script type="text/javascript" src="xgrid_files/shBrushBash.js"></script>
+		<script type="text/javascript" src="xgrid_files/shBrushCpp.js"></script>
+		<script type="text/javascript" src="xgrid_files/shBrushCSharp.js"></script>
+		<script type="text/javascript" src="xgrid_files/shBrushCss.js"></script>
+		<script type="text/javascript" src="xgrid_files/shBrushDelphi.js"></script>
+		<script type="text/javascript" src="xgrid_files/shBrushDiff.js"></script>
+		<script type="text/javascript" src="xgrid_files/shBrushGroovy.js"></script>
+		<script type="text/javascript" src="xgrid_files/shBrushJava.js"></script>
+		<script type="text/javascript" src="xgrid_files/shBrushJScript.js"></script>
+		<script type="text/javascript" src="xgrid_files/shBrushPerl.js"></script>
+		<script type="text/javascript" src="xgrid_files/shBrushPhp.js"></script>
+		<script type="text/javascript" src="xgrid_files/shBrushPlain.js"></script>
+		<script type="text/javascript" src="xgrid_files/shBrushPython.js"></script>
+		<script type="text/javascript" src="xgrid_files/shBrushRuby.js"></script>
+		<script type="text/javascript" src="xgrid_files/shBrushScala.js"></script>
+		<script type="text/javascript" src="xgrid_files/shBrushSql.js"></script>
+		<script type="text/javascript" src="xgrid_files/shBrushVb.js"></script>
+		<script type="text/javascript" src="xgrid_files/shBrushXml.js"></script>
+		<script type="text/javascript">SyntaxHighlighter.all();</script>
+		<script type="text/javascript" src="xgrid_files/index.php"><!-- site js --></script>
+	</head><body class="mediawiki ltr ns-0 ns-subject page-Xgrid skin-monobook">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 id="firstHeading" class="firstHeading">Xgrid</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">From TenGrid</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>			<!-- start content -->
+			<p>This page is not intended to replace reading the Xgrid Admin Manual but rather to supplement it.<i>  Additions here concisely hit highlights and integrate issues beyond  what is covered in the</i> <a href="http://tengrid.com/wiki1/index.php?title=XGRID_FAQ" title="XGRID FAQ"><b>frequently asked questions</b></a>.
+</p><p><big><big>Topics</big></big>
+</p>
+<table id="toc" class="toc" summary="Contents"><tbody><tr><td><div id="toctitle"><h2>Contents</h2> <span class="toctoggle">[<a href="javascript:toggleToc()" class="internal" id="togglelink">hide</a>]</span></div>
+<ul>
+<li class="toclevel-1"><a href="#Frequently_Asked_Questions"><span class="tocnumber">1</span> <span class="toctext">Frequently Asked Questions</span></a></li>
+<li class="toclevel-1"><a href="#What_is_Xgrid.3F"><span class="tocnumber">2</span> <span class="toctext">What is Xgrid?</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Related_XGRID_FAQ"><span class="tocnumber">2.1</span> <span class="toctext">Related XGRID FAQ</span></a></li>
+<li class="toclevel-2"><a href="#Xgrid_replacements_for_Linux_and_other_platforms"><span class="tocnumber">2.2</span> <span class="toctext">Xgrid replacements for Linux and other platforms</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Planning_the_Security_Envelope"><span class="tocnumber">3</span> <span class="toctext">Planning the Security Envelope</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Authentication"><span class="tocnumber">3.1</span> <span class="toctext">Authentication</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Kerberos"><span class="tocnumber">3.1.1</span> <span class="toctext">Kerberos</span></a></li>
+<li class="toclevel-3"><a href="#Password"><span class="tocnumber">3.1.2</span> <span class="toctext">Password</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Setting_Limits"><span class="tocnumber">3.2</span> <span class="toctext">Setting Limits</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Unix_permissions_and_the_sandbox"><span class="tocnumber">3.2.1</span> <span class="toctext">Unix permissions and the sandbox</span></a></li>
+<li class="toclevel-3"><a href="#Consequences_of_an_attack"><span class="tocnumber">3.2.2</span> <span class="toctext">Consequences of an attack</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Security_Enhancements"><span class="tocnumber">3.3</span> <span class="toctext">Security Enhancements</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Firewall"><span class="tocnumber">3.3.1</span> <span class="toctext">Firewall</span></a></li>
+<li class="toclevel-3"><a href="#TCP_wrappers"><span class="tocnumber">3.3.2</span> <span class="toctext">TCP wrappers</span></a></li>
+<li class="toclevel-3"><a href="#Client_Tunneling"><span class="tocnumber">3.3.3</span> <span class="toctext">Client Tunneling</span></a></li>
+<li class="toclevel-3"><a href="#Agent_Side"><span class="tocnumber">3.3.4</span> <span class="toctext">Agent Side</span></a></li>
+<li class="toclevel-3"><a href="#Reported_security_holes"><span class="tocnumber">3.3.5</span> <span class="toctext">Reported security holes</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Shared_File_Systems"><span class="tocnumber">4</span> <span class="toctext">Shared File Systems</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Why_shared_file_systems_are_desirable"><span class="tocnumber">4.1</span> <span class="toctext">Why shared file systems are desirable</span></a></li>
+<li class="toclevel-2"><a href="#Strategies_for_Shared_file_systems"><span class="tocnumber">4.2</span> <span class="toctext">Strategies for Shared file systems</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Can_a_job_mount_an_external_file_system_on_demand.3F"><span class="tocnumber">4.2.1</span> <span class="toctext">Can a job mount an external file system on demand?</span></a></li>
+<li class="toclevel-3"><a href="#Where_in_the_agent_filesystem_should_a_shared_file_system_be_mounted.3F"><span class="tocnumber">4.2.2</span> <span class="toctext">Where in the agent filesystem should a shared file system be mounted?</span></a></li>
+<li class="toclevel-3"><a href="#Should_the_shared_file_system_be_password_protected.3F"><span class="tocnumber">4.2.3</span> <span class="toctext">Should the shared file system be password protected?</span></a></li>
+<li class="toclevel-3"><a href="#Issues_to_consider_when_choosing_between__NFS.2CAFS_or_SMB"><span class="tocnumber">4.2.4</span> <span class="toctext">Issues to consider when choosing between  NFS,AFS or SMB</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Xgrid_Client_Choices"><span class="tocnumber">5</span> <span class="toctext">Xgrid Client Choices</span></a>
+<ul>
+<li class="toclevel-2"><a href="#xgrid"><span class="tocnumber">5.1</span> <span class="toctext">xgrid</span></a></li>
+<li class="toclevel-2"><a href="#MPI"><span class="tocnumber">5.2</span> <span class="toctext">MPI</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Can_jobs_submitted_to_openMPI_use_Xgrid.3F"><span class="tocnumber">5.2.1</span> <span class="toctext">Can jobs submitted to openMPI use Xgrid?</span></a>
+<ul>
+<li class="toclevel-4"><a href="#How_to_install_and_configure_OpenMPI_1.5rc1"><span class="tocnumber">5.2.1.1</span> <span class="toctext">How to install and configure OpenMPI 1.5rc1</span></a></li>
+<li class="toclevel-4"><a href="#How_to_install_and_configure_OpenMPI_1.2"><span class="tocnumber">5.2.1.2</span> <span class="toctext">How to install and configure OpenMPI 1.2</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3"><a href="#Can_jobs_submitted_to_xgrid_launch_openMPI_themselves.3F"><span class="tocnumber">5.2.2</span> <span class="toctext">Can jobs submitted to xgrid launch openMPI themselves?</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Objective_C_API"><span class="tocnumber">5.3</span> <span class="toctext">Objective C API</span></a></li>
+<li class="toclevel-2"><a href="#Other_clients.2C_APIs.2C_and_batch_file_generators"><span class="tocnumber">5.4</span> <span class="toctext">Other clients, APIs, and batch file generators</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Matlab"><span class="tocnumber">5.4.1</span> <span class="toctext">Matlab</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Resource_Management_and_Etiquette"><span class="tocnumber">6</span> <span class="toctext">Resource Management and Etiquette</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Forks.2C_Threads_and_Interprocess_Signals"><span class="tocnumber">6.1</span> <span class="toctext">Forks, Threads and Interprocess Signals</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Inter_process_signaling"><span class="tocnumber">6.1.1</span> <span class="toctext">Inter process signaling</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Sandbox"><span class="tocnumber">6.2</span> <span class="toctext">Sandbox</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Mastering_Xgrid_Agent"><span class="tocnumber">7</span> <span class="toctext">Mastering Xgrid Agent</span></a>
+<ul>
+<li class="toclevel-2"><a href="#The__Private_Controller"><span class="tocnumber">7.1</span> <span class="toctext">The  Private Controller</span></a></li>
+<li class="toclevel-2"><a href="#Processes"><span class="tocnumber">7.2</span> <span class="toctext">Processes</span></a></li>
+<li class="toclevel-2"><a href="#Agent_Xgrid_Paths"><span class="tocnumber">7.3</span> <span class="toctext">Agent Xgrid Paths</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Undocumented_executable_operation"><span class="tocnumber">7.3.1</span> <span class="toctext">Undocumented executable operation</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Style.2C_useful_commands_and_scripts"><span class="tocnumber">8</span> <span class="toctext">Style, useful commands and scripts</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Xrid_Pitfalls"><span class="tocnumber">8.1</span> <span class="toctext">Xrid Pitfalls</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Missing_functionality"><span class="tocnumber">9</span> <span class="toctext">Missing functionality</span></a>
+<ul>
+<li class="toclevel-2"><a href="#core_functionality"><span class="tocnumber">9.1</span> <span class="toctext">core functionality</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Resource_hinting"><span class="tocnumber">9.1.1</span> <span class="toctext">Resource hinting</span></a></li>
+<li class="toclevel-3"><a href="#Require_tasks_to_run_on_single_Agent"><span class="tocnumber">9.1.2</span> <span class="toctext">Require tasks to run on single Agent</span></a></li>
+<li class="toclevel-3"><a href="#SSH-like_authentication"><span class="tocnumber">9.1.3</span> <span class="toctext">SSH-like authentication</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Wish_List"><span class="tocnumber">9.2</span> <span class="toctext">Wish List</span></a>
+<ul>
+<li class="toclevel-3"><a href="#SuspendWhenNotIdle"><span class="tocnumber">9.2.1</span> <span class="toctext">SuspendWhenNotIdle</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Minor_wishes"><span class="tocnumber">9.3</span> <span class="toctext">Minor wishes</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Separate_Default_Grids"><span class="tocnumber">9.3.1</span> <span class="toctext">Separate Default Grids</span></a></li>
+<li class="toclevel-3"><a href="#A_scoreboard_that_ranks"><span class="tocnumber">9.3.2</span> <span class="toctext">A scoreboard that ranks</span></a></li>
+<li class="toclevel-3"><a href="#Method_in_of_querying_grid_status_at_command_line.3D"><span class="tocnumber">9.3.3</span> <span class="toctext">Method in of querying grid status at command line=</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Xgrid_Bugs"><span class="tocnumber">10</span> <span class="toctext">Xgrid Bugs</span></a></li>
+<li class="toclevel-1"><a href="#Frequently_Asked_Questions_2"><span class="tocnumber">11</span> <span class="toctext">Frequently Asked Questions</span></a></li>
+<li class="toclevel-1"><a href="#External_Links"><span class="tocnumber">12</span> <span class="toctext">External Links</span></a>
+<ul>
+<li class="toclevel-2"><a href="#What_documentation_is_available_for_Xgrid.3F"><span class="tocnumber">12.1</span> <span class="toctext">What documentation is available for Xgrid?</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Official_Apple_Docs"><span class="tocnumber">12.1.1</span> <span class="toctext">Official Apple Docs</span></a></li>
+<li class="toclevel-3"><a href="#Non-Apple_web_sites_that_deal_with_Xgrid"><span class="tocnumber">12.1.2</span> <span class="toctext">Non-Apple web sites that deal with Xgrid</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Tools"><span class="tocnumber">13</span> <span class="toctext">Tools</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Xgridstatus"><span class="tocnumber">13.1</span> <span class="toctext">Xgridstatus</span></a></li>
+<li class="toclevel-2"><a href="#Other_Clustering_Systems_for_OSX"><span class="tocnumber">13.2</span> <span class="toctext">Other Clustering Systems for OSX</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Cluster_Monitoring"><span class="tocnumber">13.2.1</span> <span class="toctext">Cluster Monitoring</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#References_and_Footnotes"><span class="tocnumber">14</span> <span class="toctext">References and Footnotes</span></a></li>
+</ul>
+</td></tr></tbody></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "show"; var tocHideText = "hide"; showTocToggle(); } </script>
+<a name="Frequently_Asked_Questions" id="Frequently_Asked_Questions"></a><h3> <span class="mw-headline">Frequently Asked Questions</span></h3>
+<p>The  <a href="http://tengrid.com/wiki1/index.php?title=XGRID_FAQ" title="XGRID FAQ"> FAQ now have their own page.</a>
+</p>
+<a name="What_is_Xgrid.3F" id="What_is_Xgrid.3F"></a><h3> <span class="mw-headline"><a href="http://tengrid.com/wiki1/index.php?title=What_is_Xgrid" title="What is Xgrid">What is Xgrid</a>?</span></h3>
+<p>(note to editors:  keep this section short and sweet-- most folks coming here already know what xgrid is).
+</p><p><strong class="selflink">Xgrid</strong>, with a captial-X is the name for Apple's grid computing system. With a lowercase x, <strong class="selflink">xgrid</strong> is the name of the command line utility that clients can use, <a href="#Xgrid_Client_Choices" title=""> among other ways</a>, to submit jobs to a controller.
+</p><p>An Xgrid divides into three logical components: Agent,Controller 
+and Client.  Client computers submit jobs (a set of tasks) they want run
+ to a Controller computer.  The Controller queues the Client jobs and 
+distributes tasks to Agent computers.  Agent computers run the tasks and
+ report their output and status back to the controller where it is 
+stored until deleted by the Client.  The Clients can asynchronously 
+query the controller about the status of a job and the results.  Any OSX
+ computer can be any of these.  A single mac can be more than one: it's 
+possible to be Agent, Controller and Client at the same time. There is 
+one Controller per Grid. Clients can submit jobs to Controllers of 
+different grids.  Agents can work for more than one grid.
+</p><p>Xgrid's setup has a pleasantly small palette of choices.  The 
+first two decisions to make are the kind of authentication &amp; 
+authroization to use and if a shared file system is needed.  A shared 
+file system that all the agents can access can be very beneficial for 
+many computing problems, but it is not appropriate for every network. 
+</p><p>See <a href="http://tengrid.com/wiki1/index.php?title=What_is_Xgrid" title="What is Xgrid"> More Details</a>.
+</p>
+<a name="Related_XGRID_FAQ" id="Related_XGRID_FAQ"></a><h4> <span class="mw-headline"> Related <a href="http://tengrid.com/wiki1/index.php?title=XGRID_FAQ" title="XGRID FAQ">XGRID FAQ</a> </span></h4>
+<ul><li>Do I need a powerful computer to run a controller?
+</li><li>Do I need to install software?
+</li><li>Do I need a Mac OSX server to be a controller?
+</li></ul>
+<a name="Xgrid_replacements_for_Linux_and_other_platforms" id="Xgrid_replacements_for_Linux_and_other_platforms"></a><h4> <span class="mw-headline">Xgrid replacements for Linux and other platforms</span></h4>
+<p>A non apple Xgrid Agent in java exists allowing it to work on many platforms.<sup id="cite_ref-0" class="reference"><a href="#cite_note-0" title="">[1]</a></sup> A non apple-created work-alike has been made for Linux.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1" title="">[2]</a></sup>
+</p>
+<hr>
+<a name="Planning_the_Security_Envelope" id="Planning_the_Security_Envelope"></a><h3> <span class="mw-headline">Planning the Security Envelope</span></h3>
+<p>On any Xgrid network the Agents are placing a certain level of trust 
+in the Clients since resources on their computer are in use.  There are 
+different degrees of trust granted but there is no purely zero-trust 
+level.  Authentication required to prevent uninvited bad guys from 
+submitting jobs or reading results.  A related issue is limiting the 
+scope of the damage from  accidents, broken trust, and  party crashers.
+</p><p>A major factor in choosing a setup depends whether the Xgrid 
+manager will have routine admin access to the Agents.  For example, on a
+ dedicated cluster the Xgrid controller Admin is probably the also Admin
+ of the cluster of agents.  Whereas on a 'scavenger' grid (A.K.A  
+'distributed' grid)  the xgrid manager will likely have no admin or user
+ level access to the clients at all. 
+</p>
+<a name="Authentication" id="Authentication"></a><h4> <span class="mw-headline">Authentication</span></h4>
+<p>Agents must make a choice:  they can either advertise their 
+availability to any nearby Controller via Bonjour or they can choose 
+one, and only one, Controller by a hostname or an IP address entered 
+into their preferences. ( While exquisitely convenient for self-forming,
+ almost administration-free Xgrids, the Bonjour method when combined 
+with password identification, may be ill-advised on  a non-trusted local
+ network.)
+</p><p>There is a choice between modes of authentication: password mode 
+and Kerberos.  One can use a blank password as well but usually this is 
+for debugging since there is no important simplification of the setup 
+without a password.  For most set-ups password mode is the preferred 
+choice for simplicity.
+</p>
+<a name="Kerberos" id="Kerberos"></a><h5> <span class="mw-headline">Kerberos</span></h5>
+<p>On appropriate networks Kerberos can be, by far, the most secure; but
+ it may have limited applicability in many network configurations. 
+Compared to password authentications, Kerberos is more difficult to set 
+up and requires other network services beyond Xgrid.  Kerberos is a 
+system by which computers can delegate authentication of allowed users 
+to a trusted kerberos server, typically part of a trusted LDAP or local 
+DNS setup.    Setting up security systems is considered a sophisticated 
+sys admin task, but it is made significantly easy by Mac OSX servers 
+which have a GUI process for LDAP and Kerberos.  The agents, controller 
+and clients,  must also be set up by a qualified sysadmin to bind their 
+authentication to the kerberos server.  
+</p><p>Under Kerberos, jobs execute on Agents with the userid (or 
+credentials) of the client that submitted the job.  Thus they have the 
+userid of the client and some elevated privileges on the Agent computer 
+that may allow the jobs some enhanced capabilities through a looser 
+resource <a href="http://tengrid.com/wiki1/index.php?title=Sandbox" title="Sandbox">sandbox</a>
+ (seatbelt) and file access permissions.  If the Agents don't trust the 
+Clients it may be unwise to give them elevated privileges.
+</p><p>Moreover, on some local networks this might be not useful or 
+local IT policy might oppose kerberos.  Specifically, in common 
+unmanaged local networks individual computers authenticate their own 
+user logins and passwords.  For example, in scavenger grids composed of 
+cycles donated by underutilized workstations, the workstation owners 
+might not have a single trusted authority they would want to delegate  
+user authentication to.  Conversely, in highly managed networks the 
+sysops may have already established a centralized kerberos system and 
+might be averse to having an <i>ad hoc</i> kerberos or LDAP server on 
+their network.  Thus kerberos authentication is likely to be the natural
+ choice only when the Xgrid manager and the Kerberos manager are in the 
+same IT department.
+</p><p>Under Kerberos when the Controller is authenticating to the Agent it is actually doing so with the Client's credentials.
+</p><p>Open question:  how does this works in a hybrid case where 
+clients authenticate by password and Agents authenticate by kerberos.   
+(Some online discussions seem to suggest that there is a mechanism to 
+allow Agents to authenticate to the Controller credentials instead, but 
+this does not seem to be documented.)
+</p>
+<a name="Password" id="Password"></a><h5> <span class="mw-headline">Password</span></h5>
+<p>For each controller there are two passwords:  one shared by all 
+clients to autenticate to the controller for job submission and control 
+("the client password")  and one shared by all agents that the 
+controller supplies to authenticate itself to the agent when sending out
+ or controlling a task. ("the agent password").
+</p><p>While it's casually said that Clients authenticate to the 
+Controller and the Controller  authenticates to the Agents, in fact the 
+authentication is mutual.  The controller and agent symmetrically prove 
+to each other they both know a shared secret without ever revealing that
+ secret to each other.  Thus a rogue cannot masquerade as agent, client,
+ or controller as a means to learn the password.
+</p><p>Password security on Xgrid should not be confused with that of  
+robust login protocols like SSH.  Authentication of the controller to 
+the agent is a fairly weak form of security because the controller uses 
+the same password for all the Agents.   This password is stored as 
+thinly veiled <a href="http://tengrid.com/wiki1/index.php?title=Cipher" title="Cipher"> Caesar Cipher</a>
+ in a text file on all the Agents and so can be read by anyone with 
+admin access on any agent.   The file is identical on all agents: It's 
+not salted or varied from agent to agent or signed in any way;  the 
+cipher is not a secure hash and it can be inverted to recover the 
+password.  If these files are backed up by time machine to an external 
+drive, they may be readable even by people without admin access.  Thus 
+many people have potential access to the password file.  The situation 
+is thus analogous to automated scripts that do FTP using hard-coded 
+passwords in the scripts. During authentication these passwords are 
+validated in a reciprocal, encrypted manner and  are never sent over the
+ network, but unlike SSH all other communication is not encryptend after
+ authentication.  
+</p><p>On the clients, there are different kinds of potential exposures 
+of the controller password. Again all clients share a single controller 
+password.  To use the xgrid command the client must place the password 
+on the command line or in an environment variable.  Thus these passwords
+ are often in clear text on screen and persistently lurking in the shell
+ history,  environment and  bashrc. Notably, the third party client 
+replacement app, <a href="http://tengrid.com/wiki1/index.php?title=GridStuffer&amp;action=edit&amp;redlink=1" class="new" title="GridStuffer (page does not exist)">GridStuffer</a>, stores the client password in the keychain and thus is more secure.
+</p><p>The bottom line is it possible that a bad-guy could encounter 
+either widely shared password and use it to submit jobs. With the client
+ password jobs could be submitted directly.  With the agent password, on
+ a bonjour set up the agent can impersonate the controller to submit 
+jobs. With the agent password, where a specific  computer is designated 
+as the controller, then this bad-guy would also have to spoof the 
+hostname or IP address of the controller on the local network.  This 
+last threat is less likely:  behind router networks using a non-routable
+ IP, it is usually difficult to spoof an IP from outside the router and 
+so is only a threat from insiders on such a network.
+</p><p>Thus password authentication while not requiring additional 
+services like LDAP and kerberos to be configured on the Agents, has 
+risks if the network, clients or agents are not trusted.
+</p>
+<a name="Setting_Limits" id="Setting_Limits"></a><h4> <span class="mw-headline">Setting Limits</span></h4>
+<p>As can be seen the authentication choices are polar opposites: very 
+weak or very invasive/difficult. Apple has not yet offered a middle 
+ground such as ssh-keys where the passwords can differ on every agent 
+and client and are not so exposed by use.   Fortunately there is also an
+ authorization layer to the security onion:  IP filtering, unix 
+permissions and the <a href="http://tengrid.com/wiki1/index.php?title=Sandbox" title="Sandbox">sandbox</a>.
+</p>
+<a name="Unix_permissions_and_the_sandbox" id="Unix_permissions_and_the_sandbox"></a><h5> <span class="mw-headline">Unix permissions and the sandbox</span></h5>
+<p>First, in password mode, Xgrid agents always run jobs as user 
+""nobody"" who has very few system privileges and file access on 
+properly configured computers.  Thus one is taking advantage of the 
+natural Unix permissions to limit capabilities by username.  This 
+introduces a high degree of safety as long as the unix permissions of 
+the filesystem exist (e.g.  FAT formatted thumb drives with lack unix 
+permissions) and have not been misconfigured.  Agents, would be wise to 
+run "repair permissions" before activating xgrid.
+</p><p>Second and most important of all, xgrid jobs are run in a <a href="http://tengrid.com/wiki1/index.php?title=Sandbox" title="Sandbox">sandbox</a>.
+  The sandbox further lowers the system access privileges of the job.  
+It can limit the job to seeing only certain parts of the file system and
+  selectively remove write access regardless of unix permissions, and 
+limit other system calls such as interprocess communications.    In 
+particular under password mode, the seatbelt file  prevents  access 
+drives mounted in /Volumes which is where unprotected FAT32 thumb drives
+ will be automatically mounted.  Setuid executables cannot be executed, 
+making privilege escalation security holes difficult.  The Xgrid agent 
+also reaps all forked children of a job,  thus there is no way for a job
+ to end and leave behind a daemon process that continues on.
+</p><p>The "seatbelt file" that defines the sandbox limits is more 
+restrictive in password mode than in Kerberos mode.  Agents may want to 
+consider tightening the sandbox further.
+</p>
+<a name="Consequences_of_an_attack" id="Consequences_of_an_attack"></a><h5> <span class="mw-headline">Consequences of an attack</span></h5>
+<p>To summarize: to gain access to job submission an attacker must learn
+ passwords and in some cases appropriately spoofIP addresses to allowed 
+him to pretend to be a client or pretend to be a controller.  To gain 
+higher level access to an agent from a job would require some sort of 
+privilege exploit that defeated both the unix permissions and the 
+sandbox.  To accomplish all of this simultaneously is a tall order and 
+no known attack allowing that exists.
+</p><p>However gaining just the ability to submit jobs can be exploited 
+for a Denial of Service attack (using up all CPU, memory, and network 
+resources on the Agent to a point where the computer is effectively 
+paralysed.) Since the Apple seatbelt allows network privileges it could 
+be used as a base to launch network attacks on other computers.  The 
+Apple default <a href="http://tengrid.com/wiki1/index.php?title=Sandbox" title="Sandbox">sandbox</a>
+ seatbelts also allow a job to scan files like hosts and auto_master  
+for attack planning reconnaissance to gather names of users,  names  
+other services and computers on the local network, and sometimes 
+passwords.
+</p>
+<a name="Security_Enhancements" id="Security_Enhancements"></a><h4> <span class="mw-headline">Security Enhancements</span></h4>
+<a name="Firewall" id="Firewall"></a><h5> <span class="mw-headline">Firewall</span></h5>
+<p>There are two firewalls to consider. One is the firewall on the 
+individual agent/client/controller computers and the other is a possible
+ network firewall surrounding all of them.
+</p><p>Restrictions by IP on who can access Xgrid can be the best way to
+ define the circle of trust.   If all components live inside a company 
+firewall then that confines the circle of trust.  One can still get 
+breaches if someone can tunnel a connection through the firewall but 
+that narrows the exposure vector to piggyback on other security holes.
+</p><p>An important security feature is that all controller -agent 
+communications are initiated by the agent not the controller. One should
+ not open firewall port 4111 for inbound communication on the agent.   
+Only the controller needs its firewall set for incoming connections.    
+ Similarly, there is a significant security improvement in not using 
+bonjour for agents to prevent them from  promiscuously offering 
+themselves to any controller.  This is also why it's a good idea for 
+controllers not to also be agents.
+</p>
+<a name="TCP_wrappers" id="TCP_wrappers"></a><h5> <span class="mw-headline">TCP wrappers</span></h5>
+<p>Rather than relying on soley on passwords, you may want to limit 
+client submissions to come from specific subnets, hostnames or IP 
+Addresses.  An easy way to do this is the built in TCP wrappers. First 
+check /etc/services to make sure xgrid is a named service for port 4111.
+  Then simply add to the controller's <i>/etc/hosts.deny</i>&nbsp;:
+</p>
+<pre>xgridcontrollerd:  ALL:ALL
+</pre>
+<p>and then add to the controller's <i>/etc/hosts.allow</i>&nbsp;:
+</p>
+<pre>xgridcontrollerd:  &lt;list of subnets or IP&gt;
+</pre>
+<p>However, you must include the agents on this list as well or they too
+ will be cut off.  Note: this also means that every agent could pretend 
+to be a client if they know the client password.  ( It's a shame that 
+apple did not use two ports to segregate clients and agent.)  
+Never-the-less, on many grids  the agents are managed locally along with
+ a controller, and it is the possibility of rogue clients one is trying 
+to protect against.
+</p>
+<a name="Client_Tunneling" id="Client_Tunneling"></a><h5> <span class="mw-headline">Client Tunneling</span></h5>
+<p>If you are willing to give clients a log-in userid on some proxy 
+computer  then you can set up real client authentication with per-client
+ passwords or ssh-key files.  Would be submitters enable themselves as 
+clients by ssh-ing  to that proxy computer and tunneling the connection 
+to the controller computer.  
+</p>
+<pre>ssh -f  -L 4111:controller.host.name:4111 proxy.host.name
+</pre>
+<p>On the controller, add a TCP wrappers denying to all but the proxy 
+computer and the list of agents.  Again note that all agents who know 
+the client password can be clients without the need for an ssh login.
+</p>
+<a name="Agent_Side" id="Agent_Side"></a><h5> <span class="mw-headline">Agent Side</span></h5>
+<p>Tunneling for Agents is hard to automate so not generally won't be practical.
+</p><p>Agents currently have the preference setting to either 
+take-all-comers or one specific IP.  If you want something in between, 
+set it for bonjour, but then limit the controllers that can connect with
+ TCP wrappers on the agent. 
+</p><p>open question:  what happens if you put a list of IPS into the specific host configuration in the preferences?
+</p>
+<a name="Reported_security_holes" id="Reported_security_holes"></a><h5> <span class="mw-headline">Reported security holes</span></h5>
+<ul><li>The Xgrid configuration wizard in the Server Admin gui, can 
+silently open an undocumented NFS share on the local hard drive of the 
+directory /var/xgrid/controller/sfs  that is open for read/write to the 
+universe ( no IP address restrictions).   It appears this mount is 
+intended to be used by PodcastProducer.  This security hole was reported
+ to apple who subsequently closed the report as "operates normally", so 
+it is likely to persist in future OS releases. The hole is easily fixed 
+by deleting the line for the share from /etc/exports.  Fortunately, an 
+unrelated major bug in the 10.6 server admin tools prevents  NFS 
+configuration prevents NFS from working when there is a firewall, so 
+this hole is accidentally masked.  
+</li></ul>
+<hr>
+<a name="Shared_File_Systems" id="Shared_File_Systems"></a><h3> <span class="mw-headline">Shared File Systems</span></h3>
+<p>Commonly an executable needs access to data files and libraries to do
+ it's job.  On the agent these may not be available. Likewise results 
+may file-based rather than just the standard out.   The Xgrid command 
+offers limited migration facilities for input and output.  Specific 
+files and even a whole directory tree can be encoded into the batch file
+ and transiently transported to the agent for the duration of a task or 
+job.  To go beyond this requires the agents to mount a file system from 
+another computer.
+</p>
+<a name="Why_shared_file_systems_are_desirable" id="Why_shared_file_systems_are_desirable"></a><h4> <span class="mw-headline">Why shared file systems are desirable</span></h4>
+<p>Shared file systems can relax many constraints.  For example, they 
+can offer a lightweight approach to inter-task communication and 
+persistence. When used with scoreboard  they can permit more 
+sophisticated reporting than just a single art score.  But the biggest 
+issue is simply data transport efficiency.
+</p><p>The built-in transport sacrifices efficiency for simplicity.  
+Input files  transported to the agent for a task are not cached even 
+when the same agent is running tasks that all use the same input files. 
+ The data is retransmitted for every task.  The binary data is sent in 
+uncompressed base64 encoded XML, so it's 4/3 larger than the original 
+file size.     And for single tasks, the network traffic is doubled 
+since it all goes from client to controller then controller to agent.   
+On the return trip, for output files, the same redundancies occur. 
+</p><p>Moreover, that modest inefficiency can be  dwarfed  by another 
+consideration.   Consider an calculation needing just a few items from a
+ very large database.  If the items needing to be read cannot be known 
+beforehand then the whole database must be transported across rather 
+than just the records of interest.  When using canned software, one may 
+not have the luxury of optimizing the data storage and retrieval format 
+for the idiosyncrasies of Xgrid.  An analogous issue arrises in dynamic 
+loading of libraries in code.  A given piece of code may want just a few
+ modules in a very large library.  Consider, for example, Python code 
+that uses extensions at runtime not found natively on the Agent.  You 
+may not know which parts of a large distribution library are required 
+and so have to migrate it all.
+</p><p>To accommodate these ad hoc run-time read/writes needs it highly 
+desirable to be able to mount a shared filesystem on all the agents.  
+This also allows the agents to share intermediate results and otherwise 
+be more tightly coupled.
+</p>
+<a name="Strategies_for_Shared_file_systems" id="Strategies_for_Shared_file_systems"></a><h4> <span class="mw-headline">Strategies for Shared file systems</span></h4>
+<p>Here we will ignore the two extreme cases:  on a remotely distributed
+ system where sharing a disk mount is prohibitively difficult and on 
+dedicated clusters with  complete control of Agents and so there are no 
+constraints on what can be done.   Instead we examine the case of 
+password authentication where jobs are run as user nobody and are 
+severely limited by the sandbox.  Even stronger constraints  arise in  
+grids of inhomogeneous workstations with limited admin access.
+</p>
+<a name="Can_a_job_mount_an_external_file_system_on_demand.3F" id="Can_a_job_mount_an_external_file_system_on_demand.3F"></a><h5> <span class="mw-headline">Can a job mount an external file system on demand?</span></h5>
+<p>Not easily.  Xgrid has no provision for this on the agents and 
+user-nobody cannot execute a mount command, so conventional approaches 
+are out. The <a href="http://tengrid.com/wiki1/index.php?title=Sandbox" title="Sandbox">sandbox</a>
+ allows  custom socket communication with a server, but this would not 
+be a universal solution since many pre-existing programs expect a normal
+ file system.   You can't even fake this with a UNIX fifo-file because 
+the <a href="http://tengrid.com/wiki1/index.php?title=Sandbox" title="Sandbox">sandbox</a> prohibits a pipe between different process IDs under password authentication. 
+</p><p>Thus admin intervention is needed on the Agents to set up a file 
+mount. The easiest way to make this persistent across both reboots and 
+temporary network failures is to  include it as an automount.    Such a 
+one-time configuration can even be done by the workstation owners 
+themselves using the directory utility GUI (in leopard).  However for 
+simplicity and for greater NFS option selections it may be better to run
+ a script that directly edits /etc/auto_master.
+</p>
+<a name="Where_in_the_agent_filesystem_should_a_shared_file_system_be_mounted.3F" id="Where_in_the_agent_filesystem_should_a_shared_file_system_be_mounted.3F"></a><h5> <span class="mw-headline">Where in the agent filesystem should a shared file system be mounted?</span></h5>
+<p>Since the mount is not for the benefit of the workstation owners, the
+ mount point is best kept out-of-plain-sight for various reasons   
+</p>
+<ol><li> The mount point should be unseen in file dialogs to avoid sluggish response times from querying remote disks.
+</li><li> Workstation users might mistakenly save their files on your remote disk.
+</li><li> Avoid time machine backup or spotlight indexing
+</li><li> Put up a speed bump against workstation users or Scooby Doo  meddling with your file system.  
+</li><li> No intrusive icon on the desktop or finder sidebar for the remote disk mount.
+</li></ol>
+<p>First off we can only consider places that user-nobody and the sandbox allow access.  The most obscure place is perhaps in <a href="http://tengrid.com/wiki1/index.php?title=$TEMPDIR" title="$TEMPDIR">$TEMPDIR</a>
+ which is the nobody-specific  folder Darwin unix creates as a 
+per-user-name temp directory.   A problem with this is assuring that 
+path will be the same path on all computers.  Uniformity of the mount 
+point is desired since our executables often need to know the absolute 
+path to access this.  Another possible place is just one node above 
+where xgrid creates the working folders for the tasks.   This seems 
+logical and consistent but since it's not a documented path it might 
+change or get over-written on system updates.  
+</p><p>Another possibility is /var/xgrid/sfs.  Apparently this is a 
+directory Apple uses as part of it's podcast producer suite.  When you 
+configure an xgrid controller using the "wizard" apple provies it 
+silently creates an NFS export (a modest security hole by the way).  
+When you run the podcast producer installer it tries to modify LDAP or 
+Open Directory so that this directory gets pushed out as a mount on all 
+the Kerberos clients<sup id="cite_ref-2" class="reference"><a href="#cite_note-2" title="">[3]</a></sup>
+  This behavior does not seem to be documented and also might be subject
+ to change or collisions if another controller on your network is using 
+the same mount point.
+</p><p>Charlie Strauss suggests /<i>tmp/.xsfs</i> or any name you like 
+in /tmp,  as a worthy candidate.   The finder has /private/tmp on it's 
+list of hidden directories, and unix will hide the .xsfs name,  making 
+it hard to accidentally appear in a file dialog or directory listing.   
+Because apple NFS dynamically creates the mount directory on demand 
+(unlike other some other *NIX) the folder ".xsfs" does not have to 
+pre-exist, so there's no problem with the /tmp folder getting wiped 
+every reboot.  The absolute path is also nicely short making it easy to 
+type in arguments to commands.  It has the added virtue that if the 
+workstation owner did manage to accidentally save a precious document 
+there and subsequently lost it, the owner can hardly blame the xgrid 
+manager since /tmp is always a risky place to save something.  It won't 
+get indexed by spotlight. And there's no need to uninstall it later 
+since /tmp get's wiped every reboot.
+</p>
+<a name="Should_the_shared_file_system_be_password_protected.3F" id="Should_the_shared_file_system_be_password_protected.3F"></a><h5> <span class="mw-headline">Should the shared file system be password protected?</span></h5>
+<p>While it might seem like a password is desirable, however, <i>as commonly implemented</i>,
+ it has only modest protection and added inconvenience.  First, 
+discriminating soley by password rather than IP could be more vulnerable
+ since it relies on keeping the password secret. That can be a hazard  
+since auto_mount passwords are by default kept in plain text 
+configuration files readable by all users on the agent machine <i>including third-party xgrid jobs</i>.  (See <a href="http://tengrid.com/wiki1/index.php?title=Sandbox" title="Sandbox">sandbox</a>
+ section for a way to hide this from xgrid jobs.)  Second, one must be 
+careful how the incoming user-ids are enabled on the file server since 
+simply creating standard user-IDs  would in turn grant login access to 
+the server that would be undesired.   Third, once mounted no password is
+ need for an admin on the agent to access the files.
+</p>
+<a name="Issues_to_consider_when_choosing_between__NFS.2CAFS_or_SMB" id="Issues_to_consider_when_choosing_between__NFS.2CAFS_or_SMB"></a><h5> <span class="mw-headline">Issues to consider when choosing between  NFS,AFS or SMB</span></h5>
+<p>From the server-side, <a href="http://tengrid.com/wiki1/index.php?title=NFS" title="NFS">NFS</a>
+ export is attractive because it does not require a userID and password 
+from the client but easily restricts by IP addresses.  It can enforce 
+user-id squashing so all written files are accessibly by user nobody.
+</p><p>AFP and SMB authenticate by user-id and password which will need 
+to be exposed in /etc/auto_master on every agent mounting the disk.  
+They don't natively discriminate by IP address of the agent, so by 
+default anyone who learns the userid and password can access the server 
+disk from any computer.  You won't be able to remotely edit these if you
+ need to change them without getting admin access on the Agent again.  
+To limit the scope of a password breach, It could be a good idea to also
+ implement additional IP address filtering  such as using TCP wrappers. 
+ You also need to make sure that user nobody on the agent is able to 
+access the mount by the User ID chosen.   Note: If you simply choose 
+nobody as the AFP mount user-id then all agents will be sharing the same
+ password (for user nobody) reducing its security value.  Moreover that 
+is  a trick that can only be played once:  one could not export a 
+different filesystem to a different grid this way since the Nobody user 
+ID is unique.  Finally you need to make sure that files written by 
+agents by default bear the nobody user-id not the user-id of the 
+diskmount or else the agents won't be able to access each other's shared
+ data. (recipe for how to do this on AFP?)
+</p><p>One minor virtue of AFP/SMB over NFS is the ease of opening the 
+firewall ports (1 for AFP and 6 for NFS of which 4 are varying port 
+numbers).  That is, if you are having to beg an overworked IT staff to 
+open ports in company firewalls, you might find that AFP is  open 
+already but because of the variable RPC ports NFS usually can't be open 
+by default.
+</p><p>open questions: Is it possible to store an AFP or SMB passwords 
+in a keychain to keep it out of the eyes of casual users on the agent, 
+but since it needs to mount at boot, how can these key chains be 
+unlocked?  Don't know.  Also there are <a href="http://support.apple.com/kb/TS1234" class="external text" title="http://support.apple.com/kb/TS1234" rel="nofollow">other issues</a> with passwords stored in keychains.   Is there some way to authenticate AFP by  LDAP that avoids these issues?  Don't know.
+</p>
+<hr>
+<a name="Xgrid_Client_Choices" id="Xgrid_Client_Choices"></a><h3> <span class="mw-headline">Xgrid Client Choices</span></h3>
+<p>While the agent and controller are specific software daemons,  there 
+is no one thing that  fills the roll of client.  Apple has designed a 
+set of APIs that any program can use to talk to the controller for job 
+submission and information retrieval.  Thus many different forms of 
+clients can exist for various special purposes.  However for use more as
+ traditional batch job system one has the client tools xgrid and MPI 
+built into all OSX versions.  There are also third party queue's like 
+GridStuffer<sup id="cite_ref-gridstuffer_3-0" class="reference"><a href="#cite_note-gridstuffer-3" title="">[4]</a></sup>, and demo apps in apple's development package.
+</p>
+<a name="xgrid" id="xgrid"></a><h4> <span class="mw-headline">xgrid</span></h4>
+<p>All OSX machines have the xgrid command for submitting jobs from the 
+command line.  The man page documents most of the command so we wont 
+repeat that here. But it leaves out a few important details.
+</p>
+<ol><li><b>MAJOR WARNING:</b> Make sure you understand how xgrid <a href="http://tengrid.com/wiki1/index.php?title=XGRID_FAQ#Path_Interpolation_in_Commands_and_Arguments" title="XGRID FAQ"> interpolates paths</a>
+ before using it.  The behavior is very cryptic, and it is surpisingly 
+easy to cause accidental transfers of hundreds of gigabytes, run away 
+agent jobs, and unexpected agent behavior that depends on the working 
+directory of the client shell.
+</li><li>paths for -art scripts on the command line must be relative 
+from the current working directory.  Absolute paths fail on the command 
+line for -art scripts.
+</li><li>when using -art, one <i>must</i> also specify -artid and also a condition like -artequal or -art , otherwise it will be silently ignored.
+</li><li>Arguments to art scripts are possible only in batch mode submissions.
+</li><li>scheduler hints are only merely suggestions not requirements to the controller.
+</li></ol>
+<p>See the <a href="http://tengrid.com/wiki1/index.php?title=XGRID_FAQ" title="XGRID FAQ">XGRID FAQ</a> for more details.
+</p>
+<a name="MPI" id="MPI"></a><h4> <span class="mw-headline">MPI</span></h4>
+<p>As of 10.5, openMPI is built into every mac and jobs can be launched 
+form the command line using "mpirun".   Conveniently, openMPI will 
+autodetect  an xgrid and use it if the shell contains environment 
+variables specifying the controller and password.  What could be easier!
+  Yet there's a snag....
+</p>
+<a name="Can_jobs_submitted_to_openMPI_use_Xgrid.3F" id="Can_jobs_submitted_to_openMPI_use_Xgrid.3F"></a><h5> <span class="mw-headline">Can jobs submitted to openMPI use Xgrid?</span></h5>
+<p>As of 10.5, openMPI is built into every mac and jobs can be launched 
+form the command line using "mpirun".   Conveniently, openMPI will 
+autodetect  an xgrid and use it if the shell contains environment 
+variables specifying the controller and password.  What could be easier!
+  Unfortunately, As of April 2010,  the support for Xgrid built into 
+leopard openMPI has been broken for 17 months due to a specific known 
+bug that remains unfixed in v1.3 and v1.4 of openMPI according to <a href="https://svn.open-mpi.org/trac/ompi/ticket/1777" class="external text" title="https://svn.open-mpi.org/trac/ompi/ticket/1777" rel="nofollow">this bug ticket</a>.
+ It is reported that the older release, openMPI 1.2 can be installed and
+ will work. Some guidance on using openMPI 1.2 can be found at 
+open-mpi.org <a href="http://www.open-mpi.org/faq/?category=osx#xgrid-howto" class="external text" title="http://www.open-mpi.org/faq/?category=osx#xgrid-howto" rel="nofollow">here</a> with greater detail <a href="http://www.open-mpi.org/community/lists/users/2006/01/0539.php" class="external text" title="http://www.open-mpi.org/community/lists/users/2006/01/0539.php" rel="nofollow">here</a> and <a href="http://www.open-mpi.org/faq/?category=osx#not-using-osx-bundled-ompi" class="external text" title="http://www.open-mpi.org/faq/?category=osx#not-using-osx-bundled-ompi" rel="nofollow">FAQs</a>
+</p>
+<a name="How_to_install_and_configure_OpenMPI_1.5rc1" id="How_to_install_and_configure_OpenMPI_1.5rc1"></a><h6> <span class="mw-headline">How to install and configure OpenMPI 1.5rc1</span></h6>
+<p>As of june 2010, a pre-release openMPI 1.5 (release candidate 1) that allegedly supports xgrid is now <a href="http://www.open-mpi.org/software/ompi/v1.5/" class="external text" title="http://www.open-mpi.org/software/ompi/v1.5/" rel="nofollow">available</a>.
+  However there are no reports of succefful xrgid-aware installs and by 
+some reports that this fails with an error saying -mpa unknown option
+</p><p><a href="http://www.open-mpi.org/faq/?category=all" class="external free" title="http://www.open-mpi.org/faq/?category=all" rel="nofollow">http://www.open-mpi.org/faq/?category=all</a>
+</p>
+<a name="How_to_install_and_configure_OpenMPI_1.2" id="How_to_install_and_configure_OpenMPI_1.2"></a><h6> <span class="mw-headline">How to install and configure OpenMPI 1.2</span></h6>
+<p>(needs to be filled in)
+</p>
+<a name="Can_jobs_submitted_to_xgrid_launch_openMPI_themselves.3F" id="Can_jobs_submitted_to_xgrid_launch_openMPI_themselves.3F"></a><h5> <span class="mw-headline">Can jobs submitted to xgrid launch openMPI themselves?</span></h5>
+<p>Apple provides a second, completely undocumented and unsupported, way
+ to launch MPI jobs.   Included in Xcode is a demo project called 
+GridSampler intended to be a GUI for job submission.  Building this 
+produces not one but three apps, one of which will boot MPI from jobs on
+ the grid.  When run you will see a job entered into the xgrid 
+controller that executes multiple tasks on one or more machines.  
+Inspecting the job specification for this (recoverable from the 
+controller) reveals that it simply submits ordinary concurrent tasks 
+with a wrapper that launches the desired executable.  The wrapper binary
+ bootstraps the MPI connection from each agent's task to establish the 
+network links for MPI. Unfortunately there is no documentation so it's 
+not known how to invoke any of the many options mpirun has to offer.  
+Moreover, in use it seems to be unstable, sometimes failing to set up 
+communications.  But at least it does work somewhat. The GUI app is not 
+required: just include the stand-alone wrapper binary in your own custom
+ job specifications batch files submitted from the command line.  This 
+is easily done by copying the specification pattern found in any of the 
+jobs submitted from the GUI app.
+</p>
+<a name="Objective_C_API" id="Objective_C_API"></a><h4> <span class="mw-headline">Objective C API</span></h4>
+<p>Apple has a documented API and some examples of using it in the 
+developer tool kit.  There is also a third party API toolkit called <a href="http://tengrid.com/wiki1/index.php?title=EZGrid&amp;action=edit&amp;redlink=1" class="new" title="EZGrid (page does not exist)">EZGrid</a> which purports to greatly simplify setting up an Objective C client.  
+</p>
+<a name="Other_clients.2C_APIs.2C_and_batch_file_generators" id="Other_clients.2C_APIs.2C_and_batch_file_generators"></a><h4> <span class="mw-headline">Other clients, APIs, and batch file generators</span></h4>
+<p>GridStuffer<sup id="cite_ref-gridstuffer_3-1" class="reference"><a href="#cite_note-gridstuffer-3" title="">[4]</a></sup> is a terrific replacement client with a Gui interface.  XgridFuse<sup id="cite_ref-4" class="reference"><a href="#cite_note-4" title="">[5]</a></sup> is a replacement for the xgrid Admin Tool that simplifies access to the job status and results.
+</p><p>There are projects in Ruby and Python that will import client functions.  As of mid 2010 the RxGrid<sup id="cite_ref-5" class="reference"><a href="#cite_note-5" title="">[6]</a></sup>  appears to be in active development.  PyXG <sup id="cite_ref-6" class="reference"><a href="#cite_note-6" title="">[7]</a></sup> project has no online-documentation but there is documentation in the executable pythons scripts<sup id="cite_ref-7" class="reference"><a href="#cite_note-7" title="">[8]</a></sup> .  Both of these use a syntax and capability that mimics the xgrid client tool. 
+</p><p>Additionally, there are dedicated batch file generators.  These 
+are not client replacements but rather simplify generating sophisticated
+ batch files that can then be submitted with the standard xgrid client 
+too.   The  Xgrid Batch Editor<sup id="cite_ref-kellerbatch_8-0" class="reference"><a href="#cite_note-kellerbatch-8" title="">[9]</a></sup> is a stand alone gui interface.  Xgrid.rb<sup id="cite_ref-9" class="reference"><a href="#cite_note-9" title="">[10]</a></sup>  is a ruby-based batch file generator.
+</p><p><a href="http://tengrid.com/wiki1/index.php?title=Xgridstatus" title="Xgridstatus">xgridstatus</a><sup id="cite_ref-xgridstatus_10-0" class="reference"><a href="#cite_note-xgridstatus-10" title="">[11]</a></sup>
+ is a must-have single purpose tool that accesses undocumented features 
+of the API and offers some unique functions.  It returns grid IDs, 
+availability and processor details of the agents.  Currently no other 
+tool, including apple's own offer those features.  It is not used for 
+submitting jobs.
+</p>
+<a name="Matlab" id="Matlab"></a><h5> <span class="mw-headline">Matlab</span></h5>
+<p>Matlab has it's own distributed toolkit that does not use xgrid.  However you can run matlab as an executable on xgrid.<sup id="cite_ref-11" class="reference"><a href="#cite_note-11" title="">[12]</a></sup>
+</p>
+<hr>
+<a name="Resource_Management_and_Etiquette" id="Resource_Management_and_Etiquette"></a><h3> <span class="mw-headline"> Resource Management and Etiquette</span></h3>
+<p>The <a href="http://tengrid.com/wiki1/index.php?title=XGRID_FAQ" title="XGRID FAQ">XGRID FAQ</a> covers topics on:
+</p>
+<ul><li>how to measure load
+</li><li>how to know what agents are on a grid
+</li><li>how to know what logical grids are present
+</li></ul>
+<a name="Forks.2C_Threads_and_Interprocess_Signals" id="Forks.2C_Threads_and_Interprocess_Signals"></a><h4> <span class="mw-headline">Forks, Threads and Interprocess Signals</span></h4>
+<p>The <a href="http://tengrid.com/wiki1/index.php?title=XGRID_FAQ" title="XGRID FAQ">XGRID_FAQ</a> has a detailed section on this as well.
+</p><p>Tasks can  fork or use multiple threads (c.f. <a href="http://tengrid.com/wiki1/index.php?title=Twinjob.pl" title="Twinjob.pl">twinjob.pl</a>).
+   However, with great power comes great responsibility.  The Xgid 
+controller queue has no provision for a job to hint at that it will 
+fork, or for a single task to request multiple processor slots on the 
+agent.  When the queue is full the controller will assign additional 
+tasks to the Agent till it reaches the maximum allowed level of tasks.  
+If these contain forks the number of running processes may exceed what 
+is desirable for good workflow on the agent.  It may even impair a 
+workstation's responsivity to it's desktop user: even though the xgrid 
+jobs work at nice level -20, empirically for ~4xCores <i>purely computational</i>
+ processes working full time, the workstation will be crippled.   
+Process that use up memory, disk, or network resources can impact even 
+more quickly.
+</p><p>Other than micromanging the queue there are several blunt hacks 
+that somewhat ameliorate this.  First,  the xgrid agent preferences 
+plist allows the setting of the maximum number of jobs to accept.  In 
+10.5 it was 2xCores and in 10.6 it is 0.5x cores<sup id="cite_ref-12" class="reference"><a href="#cite_note-12" title="">[13]</a></sup>.
+   If one's process flow has a predictable number of forks per task, 
+then one can adjust this number so the resultant number of processes is 
+acceptable.  However, for process flows that use variable numbers of 
+forks this solution would lead to too conservative a processor 
+restriction. To help somewhat with inhomogenous  task forking needs, one
+ can divide the agent pool into several logical grids and set the agents
+ on each to have a different cores/max_tasks ratio.    Altering the 
+max_tasks in the xgridagent.plist can not be done from xgrid itself, as 
+it requires admin access to the Agent. Thus it cannot be done 
+dynamically as the processing needs change.
+</p><p>Another approach would be turn this down to a single process per 
+node and have a pre-processing step before job submission to combine 
+jobs into tasks sets that must start simultaneously.  This approach will
+ breakdown since the marriage of convenience of unrelated tasks may have
+ ones that finish sooner than others.
+</p><p>Another approach for a task known to fork N times is to submit 
+the task along with N-1 bogus tasks  that simply wait idle for the true 
+task to complete.  If we specify that all N tasks must start at the same
+ time this forces the accounting of processor slots to respect the fork 
+count.  The problem with this approach is that it only works if xgrid 
+places all the taks on a single agent rather than distributing them.  
+Unfortunately there no way to instruct xgrid to place all the tasks on a
+ single Agent without also specifying the exact  agent the jobs must run
+ on using a narrow -art command.  That  micromangement subverts the 
+desirable feature of the queues handler to place a job on the next 
+available Agent. see <a href="http://tengrid.com/wiki1/index.php?title=Drone_thread" title="Drone thread">drone_thread</a> for an example of code for creating a job with bogus tasks.
+</p><p>intriguing observation: Normally if an agent rapidly forks 
+normally all the children will have consecutive process IDs.   On 10.5 
+xgrid agent with user Nobody, the processes IDs will be two apart 
+instead of consecutive. Speculatively,  perhaps there is some 
+intervening shadow process created on forks that is also not propagating
+ all of the POSIX/BSD signals.  
+</p>
+<a name="Inter_process_signaling" id="Inter_process_signaling"></a><h5> <span class="mw-headline">Inter process signaling</span></h5>
+<p>Two easy ways processes on the same machine can communicate 
+efficiently are BSD/POSIX signals (i.e. sending kill events) and through
+ named pipes (fifo).  Unfortunately, Xgrid on 10.5 (user Nobody) 
+prevents  forked processes from reading and writing to a named pipe. 
+(oddly they can read from a named pipe and they can write to a named 
+pipe, but not when both ends of the pipe are xgrid processes.)    
+Second, BSD/POSIX signals only work to a limited extent.  A  process 
+cannot send a signal to another process group. A parent process can send
+ a signal to a child process provided the child has not created a new 
+process group.  In 10.5 a process cannot send a signal to itself.   
+</p><p>One signal that does work between process groups is file-locking.
+  One xgrid process can flock a file and another process will respect 
+the file system flock (warning this can fail on NFS mounted file 
+systems).  Thus one can create semiphores in any mutually accessible 
+directory and poll them as areplacement for signalling.
+</p><p>See the <a href="http://tengrid.com/wiki1/index.php?title=XGRID_FAQ" title="XGRID FAQ">XGRID FAQ</a> for further details
+</p>
+<a name="Sandbox" id="Sandbox"></a><h4> <span class="mw-headline">Sandbox</span></h4>
+<p>First you would have to be extremely foolish to monkey with the 
+security sandbox the xgrid runs the tasks in. However fools may wish to 
+ forge ahead. First a couple caveats, the security sandbox is not 
+documented, and it is machine generated.  So next system update you 
+might find your sandbox modifications either overwritten or, worse, 
+causing a complete malfunction of some new sandbox system such that your
+ jobs are running unsandboxed. Yikes.  So why try?  Well the default one
+ allows network connections.  Do you really want your agents to have 
+that privilege?   It also allows agents to write to anywhere in /var 
+that user nobody can write.  It lets the agents read all sorts of things
+ in your /System, /Library, /var, and /etc folders that you might not 
+want outsiders to know the details of.   <a href="http://tengrid.com/wiki1/index.php?title=Sandbox" title="Sandbox"> Here</a> is Charlie E.M. Strauss's suggestion for a more tightly restricted while still practically useful replacement for <i>/usr/share/sandbox/xgridagentd_task_nobody.sb</i>  sandbox.
+</p>
+<a name="Mastering_Xgrid_Agent" id="Mastering_Xgrid_Agent"></a><h3> <span class="mw-headline">Mastering Xgrid Agent</span></h3>
+<a name="The__Private_Controller" id="The__Private_Controller"></a><h4> <span class="mw-headline">The  Private Controller</span></h4>
+<p>Every client can create a virtual controller and virtual agent<sup id="cite_ref-13" class="reference"><a href="#cite_note-13" title="">[14]</a></sup>.
+   Specifically if one submits a job to the controller host 
+named&nbsp;:private:  then this job is run on the local host via a 
+virtual controller.    The local host does not need to have Xgrid 
+sharing activated.  And the session only lasts as long as the 
+invocation.  Which means you can't query the job log or the job results.
+  Moreover, it is only practical to use the "-job run"  mode of 
+submission: if you use a -job submit/batch then the job is killed almost
+ immediately. 
+</p>
+<pre>xgrid -h&nbsp;:private: -job run `which hostname`
+</pre>
+<p>There's no password for the client (or the agent) and the job runs 
+with the permissions of the local user (not as Nobody or in a <a href="http://tengrid.com/wiki1/index.php?title=Sandbox" title="Sandbox">sandbox</a>)
+ regardless of the settings of the xgrid agent's sharing preferences. 
+Also there is no queuing: you can run an unlimited number of these at 
+once and these tasks do not get counted against the total tasks being 
+run by another controller.
+</p>
+<a name="Processes" id="Processes"></a><h4> <span class="mw-headline">Processes</span></h4>
+<p>The following are from a 10.6 agent with no jobs
+</p>
+<pre> UID   PID  PPID CPU PRI NI      VSZ    RSS WCHAN  STAT   TT       TIME COMMAND
+   0     1     0   0  31  0  2456700    848 -      Ss    &nbsp;??   43:43.17 /sbin/launchd
+  86  3165     1   0  33  0  2465544   4840 -      Ss    &nbsp;??    0:00.24 /usr/libexec/xgrid/xgridagentd
+   0  3168  3165   0  33  0  2460892   2108 -      Ss    &nbsp;??    0:00.02 /usr/libexec/xgrid/xgridagenthelper
+</pre>
+<p>All jobs appear to be subprocesses of xgridagenthelperd.  Each job 
+appears to have a separate processgroup ID equal to the process ID of 
+the parent fork of the job.  All jobs appear to share the session ID of 
+the xgridagenthelper.
+</p>
+<a name="Agent_Xgrid_Paths" id="Agent_Xgrid_Paths"></a><h4> <span class="mw-headline">Agent Xgrid Paths</span></h4>
+<p>Some directories are not populated until xgridagentd or 
+xgridcontrollerd are turned on for the first time.  THe following if 
+from a computer with an agent turned on for password mode in 10.5
+</p>
+<ul><li>/etc/xgrid
+</li></ul>
+<pre>drwxr-xr-x  4 root  wheel  136 May  8 13:51 agent
+drwxr-xr-x  3 root  wheel  102 Dec 10 22:30 controller
+</pre>
+<ul><li>/etc/xgrid/agent
+</li></ul>
+<pre>-rw-r--r--  1 root  wheel  1252 Nov 25  2007 com.apple.xgrid.agent.plist.default
+-rw-------  1 root  wheel    16 May  8 13:51 controller-password
+</pre>
+<ul><li>/etc/xgrid/controller
+</li></ul>
+<pre>-rw-r--r--  1 root  wheel  687 Nov 25  2007 com.apple.xgrid.controller.plist.default
+</pre>
+<ul><li>/var
+</li></ul>
+<pre>drwxr-xr-x  4 root  wheel  136 Dec 10 22:30 /var/xgrid
+</pre>
+<ul><li>/var/xgrid
+</li></ul>
+<pre>drwxr-xr-x  6 _xgridagent       _xgridagent  204 May  8 13:51 agent
+drwxr-xr-x  3 _xgridcontroller  wheel        102 Nov 25  2007 controller
+</pre>
+<ul><li>/var/xgrid/agent/
+</li></ul>
+<pre>drwx------  2 _xgridagent  _xgridagent  68 May  8 13:51 controllers
+drwxr-xr-x  2 _xgridagent  wheel        68 Nov 25  2007 cookies
+srwx------  1 _xgridagent  _xgridagent   0 May  8 13:51 status
+drwxr-xr-x  2 _xgridagent  _xgridagent  68 May  8 13:51 tasks
+</pre>
+<ul><li>/var/xgrid/controller
+</li></ul>
+<pre>drwxr-xr-x  2 _xgridcontroller  wheel  68 Nov 25  2007 blobs
+</pre>
+<ul><li>/var/run
+</li></ul>
+<pre>-rw-r--r--  1 root  daemon       3 May 20 17:16 xgridagentd.pid
+</pre>
+<p>Contains the process id of the currently running xgridagentd
+</p>
+<ul><li>/Library/Preferences/com.apple.xgrid.*.plist
+</li></ul>
+<pre>-rw-rw-r--  1 root  admin  489 May  8 13:51 com.apple.xgrid.agent.plist
+-rw-rw-r--  1 root  admin  337 Dec 10 22:30 com.apple.xgrid.controller.plist
+</pre>
+<ul><li>/System/Library/LaunchDaemons/com.apple.xgrid*.plist
+</li></ul>
+<pre>-rw-r--r--  1 root  wheel  423 Jul 28  2009 com.apple.xgridagentd.plist
+-rw-r--r--  1 root  wheel  435 Jul 28  2009 com.apple.xgridcontrollerd.plist
+</pre>
+<ul><li>/usr/libexec/xgrid/
+</li></ul>
+<pre>-rwxr-xr-x  1 root  wheel  39248 Feb 11 02:30 IdleTool
+-rwxr-xr-x  1 root  wheel  48096 Feb 11 02:31 xgridagentd
+-rwxr-xr-x  1 root  wheel  48432 Feb 11 02:30 xgridagentexec
+-rwxr-xr-x  1 root  wheel  66208 Feb 11 02:30 xgridagenthelper
+-rwxr-xr-x  1 root  wheel  48144 Feb 11 02:31 xgridcontrollerd
+</pre>
+<ul><li>/Library/Logs/
+</li></ul>
+<pre>drwxr-xr-x  3 root  admin  102 May  8 13:51 /Library/Logs/Xgrid/
+-rw-r--r--  1 _xgridagent  admin  639 May  8 13:51 /Library/Logs/Xgrid/xgridagentd.log
+</pre>
+<ul><li> /usr/share/sandbox/x*
+</li></ul>
+<pre>-rw-r--r--  1 root  wheel  522 Jul 28  2009 xgridagentd.sb
+-rw-r--r--  1 root  wheel  687 Jul 28  2009 xgridagentd_task_nobody.sb
+-rw-r--r--  1 root  wheel  590 Jul 28  2009 xgridagentd_task_somebody.sb
+-rw-r--r--  1 root  wheel  775 Jul 28  2009 xgridcontrollerd.sb
+</pre>
+<a name="Undocumented_executable_operation" id="Undocumented_executable_operation"></a><h5> <span class="mw-headline">Undocumented executable operation</span></h5>
+<ul><li>IdleTool   Appears to return the HDIdletime (no-mouse/kb).  It 
+does not seem to take simple args. It contains the following strings in 
+the binary:  IOHIDSystem   and  HIDIdleTime.  However it has two 
+unexpected features.  When it runs it tries to read from every mounted 
+disk (seen from the seatbelt debug log) .  Thus using this for idle time
+ calculations would likely keep all disks spun up.  Second when run it 
+appears to try to do a setuid root which empirically appears to be 
+unnecessary as it still functions when setuid is removed.  (this can be 
+seen from the seatbelt logfile which blocks the setuid root.   The 
+purpose of this executable is not known.  It's plausible it is used when
+ the xgrid agent is set to be unavailable when not idle.  If so the disc
+ touching aspect would seem to be a bad mistake when used for that 
+purpose.
+</li></ul>
+<p>(if you need something equivalent, see keller farm's idler.c which lacks these defects.)
+</p>
+<ul><li>xgridagentexec execs any supplied command with args.  What else 
+it does in not known. xgridhelperd uses to spawn jobs as user nobody.  
+</li></ul>
+<pre>97711 root /usr/libexec/xgrid/xgridagentexec --uid -2 --priority 20 --directory /var/xgrid/agent/tasks/iMWETfl2/working --fd 3 /path/to/command  arg1 arg2 arg3
+</pre>
+<pre>usage: /usr/libexec/xgrid/xgridagentexec [--uid &lt;uid&gt;] [--priority &lt;priority&gt;] [--fd &lt;fd&gt;] [--directory &lt;directory] &lt;path&gt; [&lt;args&gt;]
+</pre>
+<p>When a job runs 
+Emprically, a command like 
+</p>
+<dl><dd>sudo /usr/libexec/xgrid/xgridagentexec --uid -2 --directory /tmp/foo `which touch` bar
+</dd></dl>
+<p>will run as user -2 (nobody) and cd the the directory /tmp/foo where 
+it will touch the file bar.  It does not appear to chroot to that 
+directory.
+</p>
+<ul><li>xgridhelperd  run form the command line outputs the following when run, then takes input from the keyboard in full duplex.  
+</li></ul>
+<pre>RPY 0 0 . 0 94
+Content-Type: application/beep+xml
+
+&lt;greeting&gt;&lt;profile uri="xgridagenthelper"/&gt;&lt;/greeting&gt;
+END
+</pre>
+<p>xgridhelperd calls xgridagentexec
+</p>
+<ul><li>xgridagentd  when run from a normal user terminal command line outputs:
+</li></ul>
+<pre>Sat May  8 14:33:52 Gantor.local xgridagentd[3403] &lt;Error&gt;: Error: could not open logfile "/Library/Logs/Xgrid/xgridagentd.log" for  appending (errno = 13)
+Sat May  8 14:33:52 Gantor.local xgridagentd[3403] &lt;Error&gt;: Error: agent could not change permissions of keytab "/etc/krb5.keytab"
+Sat May  8 14:33:52 Gantor.local xgridagentd[3403] &lt;Error&gt;: Error: agent could not add user "_xgridagent" to group "_keytabusers": 64
+Sat May  8 14:33:52 Gantor.local xgridagentd[3403] &lt;Notice&gt;: Notice: agent will only accept tasks when idle
+Sat May  8 14:33:52 Gantor.local xgridagentd[3403] &lt;Notice&gt;: Notice: agent maximum task count is 1
+Sat May  8 14:33:52 Gantor.local xgridagentd[3403] &lt;Notice&gt;: Notice: agent processor speed is 2400
+Sat May  8 14:33:52 Gantor.local xgridagentd[3403] &lt;Error&gt;: Error: agent password file "/Users/foo/Library/Application Support/Xgrid/Agent/controller-password" is missing
+Sat May  8 14:33:52 Gantor.local xgridagentd[3403] &lt;Notice&gt;: Notice: agent failed
+</pre>
+<ul><li>xgrdicontrollerd when run from a normal user command line outputs:
+</li></ul>
+<pre>Sat May  8 14:38:18 Gantor.local xgridcontrollerd[3427] &lt;Error&gt;: Error: could not open logfile "/Library/Logs/Xgrid/xgridcontrollerd.log" for appending (errno = 13)
+Sat May  8 14:38:18 Gantor.local xgridcontrollerd[3427] &lt;Error&gt;: Error: controller missing password file "/Users/foo/Library/Application Support/Xgrid/Controller/client-password"
+Sat May  8 14:38:18 Gantor.local xgridcontrollerd[3427] &lt;Notice&gt;: Notice: controller failed
+</pre>
+<p>Searching these for strings shows that it appears that xgridagentd 
+have very few strings and looks like a simple wrapper that launches 
+helperd.  xgridhelperd has a lot of strings many of which appear to be 
+messages that might get sent to a controller.
+</p>
+<a name="Style.2C_useful_commands_and_scripts" id="Style.2C_useful_commands_and_scripts"></a><h3> <span class="mw-headline">Style, useful commands and scripts</span></h3>
+<p>Not filled in
+</p>
+<a name="Xrid_Pitfalls" id="Xrid_Pitfalls"></a><h4> <span class="mw-headline">Xrid Pitfalls</span></h4>
+<ul><li>crashing jobs can fill up crash reporter dump
+</li><li>Using too many threads or forks.
+</li></ul>
+<a name="Missing_functionality" id="Missing_functionality"></a><h3> <span class="mw-headline">Missing functionality</span></h3>
+<a name="core_functionality" id="core_functionality"></a><h4> <span class="mw-headline">core functionality</span></h4>
+<p>Xgrid is intentionally a thin interface for a grid controller and 
+thus lacks bells and whistles. Users who want these can implement their 
+own using the cocoa api for this.  However, listed here are major 
+functionality missing from the xgrid command cli that is particularly 
+difficult to work around.
+</p>
+<a name="Resource_hinting" id="Resource_hinting"></a><h5> <span class="mw-headline">Resource hinting</span></h5>
+<p>tasks should be allowed to hint how much resources they desire 
+(number of processor slots and amount of memory).  The controller could 
+use this to correctly count multi-threaded tasks as though they were 
+multiple tasks on the agent or to avoid putting multiple large-memory 
+jobs on the same machine.  Currently the controller can overburden a 
+machine and the maxTaskCount plist item is not only too course grained, 
+but it cannot be changed dynamically or without admin access.
+</p>
+<a name="Require_tasks_to_run_on_single_Agent" id="Require_tasks_to_run_on_single_Agent"></a><h5> <span class="mw-headline">Require tasks to run on single Agent</span></h5>
+<p>There is syntax to require tasks to start concurrently but does not 
+allow requiring tasks to be placed on a single agent.   (note: The 
+scoreboard -art interface allows narrowing the jobs to a specifically 
+named agent, but then one has to name this agent rather than letting the
+ scheduler choose.)  For example, highly parallel jobs may prefer to run
+ on the same node rather than use MPI to chat across the network.
+</p>
+<a name="SSH-like_authentication" id="SSH-like_authentication"></a><h5> <span class="mw-headline">SSH-like authentication</span></h5>
+<p>The requirements for kerberos authentication is unacceptable to many 
+kinds of agents, and password authentication with it's shared plaintext 
+passwords is flimsy.  Xgrid needs to replace the shared password system 
+with something more secure (modeled after ssh-keys or some other 
+public-key exchange authentication) that would allow the controller to 
+have a different password or ssh-key for every agent if desired.  
+passwords and keys should be stored in a keychain rather than in plain 
+text.
+</p>
+<a name="Wish_List" id="Wish_List"></a><h4> <span class="mw-headline">Wish List</span></h4>
+<a name="SuspendWhenNotIdle" id="SuspendWhenNotIdle"></a><h5> <span class="mw-headline">SuspendWhenNotIdle</span></h5>
+<p>By suspend I don't mean not accepting pending tasks but actually 
+freezing the running tasks in a way that allows them to restart.  A 
+light weight implementation of this need not use checkpointing or task 
+migration.  Instead, when agents are used on desktops it would sometimes
+ be desirable to have running jobs halt as though they received a POSIX 
+ sigSTOP.   By having a long resume-lag (minmum idle time before 
+restart) the jobs will get paged out by the VM if they are in the way.  
+If this is implemented it would be desirable to allow the resume lag 
+time  to be variable across the day so that, for example, the restart 
+lag time can be large during business hours and short after close of 
+business.  This should be trigger-able either from a non-idle signal or 
+when the load from non-nobody processes was approaching 1.  Even with 
+jobs set to nice -20 the jobs can overburden a machine  in their memory 
+and network usage, and should not resume instantly after the load is low
+ like unix process priority scheduler allows.
+<a href="http://tengrid.com/wiki1/index.php?title=While_idle" title="While idle">while_idle</a>
+</p>
+<a name="Minor_wishes" id="Minor_wishes"></a><h4> <span class="mw-headline">Minor wishes</span></h4>
+<a name="Separate_Default_Grids" id="Separate_Default_Grids"></a><h5> <span class="mw-headline">Separate Default Grids</span></h5>
+<p>When new agents join a grid they go into the "default" grid.  This is
+  the default for jobs run from clients without a GID specifier.  It 
+would be nice if one could separately specify which grid new agents join
+ by default and which grid clients run on by default.  Example:  I don't
+ want agents joining by queue unannounced since my jobs require certain 
+features such as a mounted network disks.  If those agents snag jobs 
+from the queue the jobs will fail.  Thus I don't run jobs on the default
+ queue and I move the agents out of the default queue when they are 
+vetted.  However by accident the default queue accumulates jobs which 
+had the gid specifier left off.  Not only is that a nuisance to clients,
+ but it means when a agent joins the grid it gets hammered by stale 
+rogue jobs that were pending for a lack of an agent.
+</p>
+<a name="A_scoreboard_that_ranks" id="A_scoreboard_that_ranks"></a><h5> <span class="mw-headline">A scoreboard that ranks</span></h5>
+<p>The current scoreboard is merely a pass-fail filter.  The  scores are not ranked. 
+</p>
+<a name="Method_in_of_querying_grid_status_at_command_line.3D" id="Method_in_of_querying_grid_status_at_command_line.3D"></a><h5> <span class="mw-headline">Method in of querying grid status at command line=</span></h5>
+<p>The Xgrid client command line interface lacks the following grid query and manipulation capability:
+1) does not provide any way to list what agents are available on the grid.  
+2) does not provide a way to assign agents to a logical grid.
+3) When there are multiple logical grids you cannot determine directly which agents are one which logical grid.
+4) It's inconvenient to figure out which logical grid numbers go with which logical grids.
+5) you cannot renumber logical grids
+6) you cannot reset the controller job counter back to 1
+7) annoyingly you cannot even cut and paste this info from the xgrid admin tool.
+There is no apple-based solution, but you can use the third party <a href="http://tengrid.com/wiki1/index.php?title=Xgridstatus" title="Xgridstatus">xgridstatus</a> tool.
+</p>
+<a name="Xgrid_Bugs" id="Xgrid_Bugs"></a><h3> <span class="mw-headline">Xgrid Bugs</span></h3>
+<ul><li>xgrid fails to reap jobs whose tasks have different process IDs at xgridctl stop
+</li></ul>
+<p>If a task declares a new process group (setprgrp) in any subprocess 
+then xgrid will correctly reap the subprocesses when the parent process 
+exits.  However it will fail to reap the process upon xgridagent 
+shutdown via xgridctl stop.  In that case the detached process groups 
+will become oprhans and continue running.  If a new xgridagent process 
+later starts these are not counted as running tasks.
+</p><p><br>
+</p>
+<ul><li>Specification size bug:  apparently you can submit a job larger than you can later retrieve the specification for.
+</li></ul>
+<pre>$xgrid -job specification -id 8501 
+ xgrid(12630,0xa04d1720) malloc: *** mmap(size=391450624) failed (error  code=12)
+ error: can't allocate region
+ set a breakpoint in malloc_error_break to debug
+</pre>
+<dl><dd>the job in question was created like this:
+<dl><dd>xgrid -job submit -in foo /bin/sleep 50
+</dd></dl>
+</dd><dd>where foo is local directory with a single file  of size 133MB.
+</dd></dl>
+<ul><li>xgrid client crashes when argmin is present without artmax <sup id="cite_ref-14" class="reference"><a href="#cite_note-14" title="">[15]</a></sup>
+</li></ul>
+<pre>$xgrid -job submit -gid 0 -art ./riofil.pl -artid foo -artmin 1 `which hostname`
+ 2010-06-14 12:42:19.769 xgrid[35584:807] *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '*** -[NSCFDictionary setObject:forKey:]: attempt to insert nil value (key: artMax)'
+2010-06-14 12:42:19.944 xgrid[35584:807] Stack: (
+    2477006827,
+    2424389179,
+    2477006283,
+    2477006346,
+    2487067128,
+    17992,
+    11269,
+    11132,
+    10500,
+    10382
+)
+Trace/BPT trap
+</pre>
+<ul><li>controller memory leak<sup id="cite_ref-15" class="reference"><a href="#cite_note-15" title="">[16]</a></sup>
+</li></ul>
+<dl><dd>For no apparent reason, the controller seems to require a 
+resident memory footprint comparable to 1/2 the sum of all the running 
+job specifications!!  If you submit many jobs using the -in command and a
+ large directory, the (real, not virtual) memory usage creeps up on the 
+controller by an amount similar to the total of all running-jobs  and 
+eventually crashes the controller.  THis is odd because there's no 
+reason the controller should hold the jobs in memory after it starts 
+them on the agent.  This mainly impacts cases where shared file systems 
+are unavailable:  If a shared file system exists, it's better to use 
+this to distribute data for many reasons.  Thus this bug mainly impacts 
+ large distributed clusters with large input data requirements. Note 
+this leak only persist for the duration of the job and the excess memory
+ usage is returned after the job completes so it's not a permanent leak 
+that grows indefinitely.  Apples says in bugreport they have no 
+intention to fix this and suggests using a shared file system. 
+</dd></dl>
+<ul><li> xgrid -job run
+</li></ul>
+<ol><li>If you control-c  a run-submission command it does not stop the 
+running job, and since you don't know it's job-id you can't kill it 
+either.
+</li><li>Conversely, if you kill the job backing the run-command from the xgrid admin, then the run command silently waits forever.
+</li><li>If the job fails to start due to no suitable nodes (by art or 
+by taskerrors) the run command silently waits forever, or until you 
+control-c it, leaving behind a pending job you don't know the ID to.
+</li><li> it appears this can leave behind folders in the working directory that are never purged.
+</li></ol>
+<ul><li> Launchd
+</li></ul>
+<ol><li> When the Xgrid Agent crashes, launchd fails to kill the 
+orphaned tasks.  Launchd then relaunches the xgridagent daemon and the 
+controller resends the tasks.  (This process can repeat till the 
+computer collapses under the load if the reason for the crash was caused
+ be the jobs.) If you want to observe this:  this bug occasionally can 
+be induced by submitting too many jobs to -h&nbsp;:private: too quickly.
+  It can also be artificially induced directly by killing the 
+xgridhelper process.  It has been seen to happen in normal job 
+submissions as well but cannot be reproduced on demand.  Apple says in a
+ bug report they have no intention to fix this.  Here is an example of a
+ process tree showing this bug happening that was caught in the wild. 
+</li></ol>
+<pre>-+= 00001 root /sbin/launchd
+ \-+= 00262 root /usr/libexec/xgrid/xgridagenthelper
+   |-+= 33556 nobody /usr/bin/perl -we  print `tar -xzf MRD.tgz`; print `./AnchoredPDBCreator.static.macosgccrelease \@options`
+   | \-+- 33563 nobody tar -xzf MRD.tgz
+   |   \--- 33564 nobody gzip -d
+   |-+= 37232 nobody /usr/bin/perl -we  print `tar -xjf MRD.tbz`; print `./AnchoredPDBCreator`
+   | \-+- 37235 nobody tar -xjf MRD.tbz
+   |   \--- 37236 nobody bzip2 -d
+   \--= 38182 nobody /usr/libexec/xgrid/xgridagentexec --uid -2 --priority 20 --directory /var/xgrid/agent/tasks/AeecMZn6/working --fd 3 /usr/bin/perl -we  print `tar -xjf MRD.tbz`; print `./AnchoredPDBCreator`
+
+ \-+= 51155 _xgridagent /usr/libexec/xgrid/xgridagentd
+   \--= 51157 root /usr/libexec/xgrid/xgridagenthelper 
+</pre>
+<p>Notice the two instances of xgridagenthelper one of which has been orphaned from xgridagentd.
+</p>
+<a name="Frequently_Asked_Questions_2" id="Frequently_Asked_Questions_2"></a><h3> <span class="mw-headline"><a href="http://tengrid.com/wiki1/index.php?title=XGRID_FAQ" title="XGRID FAQ">Frequently Asked Questions</a></span></h3>
+<p><a href="http://tengrid.com/wiki1/index.php?title=XGRID_FAQ" title="XGRID FAQ"> The FAQ now have their own page.</a>
+</p>
+<a name="External_Links" id="External_Links"></a><h2> <span class="mw-headline"> External Links </span></h2>
+<a name="What_documentation_is_available_for_Xgrid.3F" id="What_documentation_is_available_for_Xgrid.3F"></a><h3> <span class="mw-headline">What documentation is available for Xgrid?</span></h3>
+<a name="Official_Apple_Docs" id="Official_Apple_Docs"></a><h4> <span class="mw-headline">Official Apple Docs</span></h4>
+<p>man pages for the command-line tools contain useful examples:
+</p>
+<ul><li> <a href="http://developer.apple.com/mac/library/documentation/Darwin/Reference/ManPages/man1/xgrid.1.html" class="external text" title="http://developer.apple.com/mac/library/documentation/Darwin/Reference/ManPages/man1/xgrid.1.html" rel="nofollow">man xgrid</a>       # client submits and monitor jobs
+</li><li> <a href="http://developer.apple.com/mac/library/documentation/Darwin/Reference/ManPages/man8/xgridctl.8.html" class="external text" title="http://developer.apple.com/mac/library/documentation/Darwin/Reference/ManPages/man8/xgridctl.8.html" rel="nofollow">man xgridctl</a> # start/stop xgrid daemons
+</li></ul>
+<p>The primary Xgrid documentation is the Xgrid Administration manual for Mac OS X Server:
+</p>
+<ul><li><a href="http://images.apple.com/server/pdfs/Xgrid_Admin_v10.6.pdf" class="external free" title="http://images.apple.com/server/pdfs/Xgrid_Admin_v10.6.pdf" rel="nofollow">http://images.apple.com/server/pdfs/Xgrid_Admin_v10.6.pdf</a>
+</li></ul>
+<p>The ADC Developer library contains a reference description of the Xgrid Foundation API for Cocoa developers:
+</p>
+<ul><li><a href="http://developer.apple.com/documentation/Performance/Conceptual/XgridDeveloper/index.html" class="external free" title="http://developer.apple.com/documentation/Performance/Conceptual/XgridDeveloper/index.html" rel="nofollow">http://developer.apple.com/documentation/Performance/Conceptual/XgridDeveloper/index.html</a>
+</li></ul>
+<p>Apple's FAQ has some good info, but it is often too terse and has not been groomed of  stale info or broken links.  
+</p>
+<ul><li><a href="http://lists.apple.com/faq/pub/xgrid_users/" class="external text" title="http://lists.apple.com/faq/pub/xgrid_users/" rel="nofollow">official Apple FAQ</a>
+</li></ul>
+<p>Apple Marketing docs.
+</p>
+<ul><li> <a href="http://www.apple.com/macosx/features/xgrid/" class="external free" title="http://www.apple.com/macosx/features/xgrid/" rel="nofollow">http://www.apple.com/macosx/features/xgrid/</a>
+</li><li> <a href="http://www.apple.com/server/macosx/features/xgrid.html" class="external free" title="http://www.apple.com/server/macosx/features/xgrid.html" rel="nofollow">http://www.apple.com/server/macosx/features/xgrid.html</a>
+</li><li> <a href="http://developer.apple.com/hardware/hpc/" class="external free" title="http://developer.apple.com/hardware/hpc/" rel="nofollow">http://developer.apple.com/hardware/hpc/</a>
+</li></ul>
+<a name="Non-Apple_web_sites_that_deal_with_Xgrid" id="Non-Apple_web_sites_that_deal_with_Xgrid"></a><h4> <span class="mw-headline">Non-Apple web sites that deal with Xgrid</span></h4>
+<p>A cohesive introductory tutorial to basic xgrid client use can be found a smith college
+</p>
+<ul><li><a href="http://cs.smith.edu/dftwiki/index.php/XGrid_Tutorial_Part_1:_Monte_Carlo" class="external text" title="http://cs.smith.edu/dftwiki/index.php/XGrid_Tutorial_Part_1:_Monte_Carlo" rel="nofollow">Smith College Tutorial</a>  (there are 3 parts there)
+</li></ul>
+<p>MacResearch has a superb set of <a href="http://www.macresearch.org/the_xgrid_tutorials" class="external text" title="http://www.macresearch.org/the_xgrid_tutorials" rel="nofollow">tutorials</a> by Charles Parnot.
+</p>
+<ul><li><a href="http://www.macresearch.org/the_xgrid_tutorials_part_i_xgrid_basics" class="external text" title="http://www.macresearch.org/the_xgrid_tutorials_part_i_xgrid_basics" rel="nofollow">The Xgrid Tutorials (Part I): Xgrid Basics</a>
+</li><li><a href="http://www.macresearch.org/the_xgrid_tutorials_part_ii_gridstuffer_basics" class="external text" title="http://www.macresearch.org/the_xgrid_tutorials_part_ii_gridstuffer_basics" rel="nofollow">The Xgrid Tutorials (Part II): GridStuffer Basics</a>
+</li><li><a href="http://www.macresearch.org/the_xgrid_tutorials_part_iii_running_batch_jobs" class="external text" title="http://www.macresearch.org/the_xgrid_tutorials_part_iii_running_batch_jobs" rel="nofollow">The Xgrid Tutorials (Part III): Running Batch Jobs</a>
+</li><li><a href="http://www.macresearch.org/the_xgrid_tutorials_part_iv_submit_jobs_with_ruby" class="external text" title="http://www.macresearch.org/the_xgrid_tutorials_part_iv_submit_jobs_with_ruby" rel="nofollow">The Xgrid Tutorials (Part IV): Submit Jobs with Ruby</a>
+</li><li><a href="http://www.macresearch.org/xgrid-leopard-scoreboard-rules" class="external text" title="http://www.macresearch.org/xgrid-leopard-scoreboard-rules" rel="nofollow">scoreboard-rules!</a>
+</li><li><a href="http://www.macresearch.org/xgrid-leopard-good-bad-ugly-and-new-stuff" class="external text" title="http://www.macresearch.org/xgrid-leopard-good-bad-ugly-and-new-stuff" rel="nofollow">Xgrid Leopard: the good, the bad, the ugly, and the new stuff</a>
+</li></ul>
+<p>Another set of tutorials by  Drew McCormack 
+</p>
+<ul><li><a href="http://macdevcenter.com/pub/a/mac/2005/08/23/xgrid.html" class="external text" title="http://macdevcenter.com/pub/a/mac/2005/08/23/xgrid.html" rel="nofollow">Distributed Tiger: Xgrid Comes of Age</a> (2005)
+</li><li><a href="http://macdevcenter.com/pub/a/mac/2005/09/13/xgrid.html" class="external text" title="http://macdevcenter.com/pub/a/mac/2005/09/13/xgrid.html" rel="nofollow">Sweetening Your Xgrid with Cocoa </a> (2005)
+</li><li><a href="http://www.oreillynet.com/pub/a/mac/2004/05/18/xgrid_pt2.html" class="external text" title="http://www.oreillynet.com/pub/a/mac/2004/05/18/xgrid_pt2.html" rel="nofollow">Integrating Xgrid into Cocoa Applications, Part 2</a> (from 2004)
+</li><li><a href="http://www.macresearch.org/getting_started_with_openmpi_and_xgrid" class="external text" title="http://www.macresearch.org/getting_started_with_openmpi_and_xgrid" rel="nofollow">Getting Started with OpenMPI and Xgrid </a>] (from 2006)
+</li><li><a href="http://www.macresearch.org/cocoa-scientists-part-xx-python-scriptersmeet-cocoa" class="external text" title="http://www.macresearch.org/cocoa-scientists-part-xx-python-scriptersmeet-cocoa" rel="nofollow">Writing your own xgrid job monitor in Python</a> (2007)
+</li></ul>
+<p>Other helpful  sites that discuss Xgrid:
+</p>
+<ul><li><a href="http://www.macos.utah.edu/documentation/administration/xgrid/xgrid_presentation/general_info.html" class="external free" title="http://www.macos.utah.edu/documentation/administration/xgrid/xgrid_presentation/general_info.html" rel="nofollow">http://www.macos.utah.edu/documentation/administration/xgrid/xgrid_presentation/general_info.html</a>
+</li><li><a href="http://www.macos.utah.edu/documentation/administration/xgrid.html" class="external free" title="http://www.macos.utah.edu/documentation/administration/xgrid.html" rel="nofollow">http://www.macos.utah.edu/documentation/administration/xgrid.html</a>
+</li><li><a href="http://hammonds.scu.edu/%7Eclasses/pyxg.html" class="external free" title="http://hammonds.scu.edu/~classes/pyxg.html" rel="nofollow">http://hammonds.scu.edu/~classes/pyxg.html</a>
+</li><li><a href="http://cmgm.stanford.edu/%7Ecparnot/xgrid-stanford/" class="external free" title="http://cmgm.stanford.edu/~cparnot/xgrid-stanford/" rel="nofollow">http://cmgm.stanford.edu/~cparnot/xgrid-stanford/</a>
+</li><li><a href="http://kellerfarm.com/kfsproducts/opensource/agentidler/" class="external text" title="http://kellerfarm.com/kfsproducts/opensource/agentidler/" rel="nofollow">The agentidler Library</a>
+</li><li><a href="http://kellerfarm.com/kfsproducts/yesfree/xgridbatcheditor/" class="external text" title="http://kellerfarm.com/kfsproducts/yesfree/xgridbatcheditor/" rel="nofollow">Xgrid Batch Editor</a>
+</li><li><a href="http://bitbucket.org/j05e/xgrid/src" class="external text" title="http://bitbucket.org/j05e/xgrid/src" rel="nofollow">Xgrid.rb</a>
+</li><li><a href="http://pyxg.scipy.org/" class="external text" title="http://pyxg.scipy.org/" rel="nofollow">PyXG = Python + Xgrid</a>
+</li></ul>
+<a name="Tools" id="Tools"></a><h2> <span class="mw-headline"> Tools </span></h2>
+<a name="Xgridstatus" id="Xgridstatus"></a><h3> <span class="mw-headline">Xgridstatus</span></h3>
+<ul><li><a href="http://tengrid.com/wiki1/index.php?title=Xgridstatus" title="Xgridstatus">xgridstatus</a>
+ A fast command line tool with XML output, providing  features Apple 
+seems to have overlooked with their XgridAdmin tool.  Charlie Strauss 
+says it's a must have.
+</li></ul>
+<p><br>
+</p>
+<a name="Other_Clustering_Systems_for_OSX" id="Other_Clustering_Systems_for_OSX"></a><h3> <span class="mw-headline">Other Clustering Systems for OSX</span></h3>
+<ul><li>Sungrid
+</li><li>Condor
+</li><li><a href="http://daugerresearch.com/pooch/features.shtml" class="external text" title="http://daugerresearch.com/pooch/features.shtml" rel="nofollow">Pooch</a>
+</li></ul>
+<a name="Cluster_Monitoring" id="Cluster_Monitoring"></a><h4> <span class="mw-headline">Cluster Monitoring</span></h4>
+<ul><li><a href="http://ganglia.info/" class="external text" title="http://ganglia.info/" rel="nofollow">Ganglia</a> (open source) is  suited for dedicated clusters
+</li><li><a href="http://tengrid.com/wiki1/index.php?title=RemoteActivity.app&amp;action=edit&amp;redlink=1" class="new" title="RemoteActivity.app (page does not exist)">RemoteActivity.app</a>  A meta tool to overlook xgrid, LSF and other queues from a single tool.  Some documentation can be found <a href="http://www.macresearch.org/introducing_remote_activity_mac_native_job_monitoring" class="external text" title="http://www.macresearch.org/introducing_remote_activity_mac_native_job_monitoring" rel="nofollow">here</a> from Drew McCormack.
+</li></ul>
+<a name="References_and_Footnotes" id="References_and_Footnotes"></a><h2> <span class="mw-headline"> References and Footnotes </span></h2>
+<ol class="references"><li id="cite_note-0"><a href="#cite_ref-0" title="">↑</a>  Java xgrid agent replacement at sourceforge <a href="http://sourceforge.net/projects/xgridagent-java/" class="external free" title="http://sourceforge.net/projects/xgridagent-java/" rel="nofollow">http://sourceforge.net/projects/xgridagent-java/</a> </li>
+<li id="cite_note-1"><a href="#cite_ref-1" title="">↑</a>  Xgrid for Linux  was at  <a href="http://unu.novajo.ca/simple/archives/000026.html" class="external free" title="http://unu.novajo.ca/simple/archives/000026.html" rel="nofollow">http://unu.novajo.ca/simple/archives/000026.html</a> but that link is sometimes flakey.   If so see the <a href="http://cc.bingj.com/cache.aspx?q=xgrid+for+linux&amp;d=4848159179736361&amp;mkt=en-US&amp;setlang=en-US&amp;w=66a1fe92,1c3500de" class="external text" title="http://cc.bingj.com/cache.aspx?q=xgrid+for+linux&amp;d=4848159179736361&amp;mkt=en-US&amp;setlang=en-US&amp;w=66a1fe92,1c3500de" rel="nofollow">google cache</a>. An alternative set of links can be found here <a href="http://lists.apple.com/archives/xgrid-users/2005/Apr/msg00056.html" class="external free" title="http://lists.apple.com/archives/xgrid-users/2005/Apr/msg00056.html" rel="nofollow">http://lists.apple.com/archives/xgrid-users/2005/Apr/msg00056.html</a> </li>
+<li id="cite_note-2"><a href="#cite_ref-2" title="">↑</a>  <a href="http://www.macenterprise.org/articles/settinguppodcastproducerinanactivedirectoryenvironment" class="external free" title="http://www.macenterprise.org/articles/settinguppodcastproducerinanactivedirectoryenvironment" rel="nofollow">http://www.macenterprise.org/articles/settinguppodcastproducerinanactivedirectoryenvironment</a></li>
+<li id="cite_note-gridstuffer-3">↑ <sup><a href="#cite_ref-gridstuffer_3-0" title="">4.0</a></sup> <sup><a href="#cite_ref-gridstuffer_3-1" title="">4.1</a></sup> GridStuffer is available at <a href="http://cmgm.stanford.edu/%7Ecparnot/xgrid-stanford/html/goodies/GridStuffer-info.html" class="external free" title="http://cmgm.stanford.edu/~cparnot/xgrid-stanford/html/goodies/GridStuffer-info.html" rel="nofollow">http://cmgm.stanford.edu/~cparnot/xgrid-stanford/html/goodies/GridStuffer-info.html</a></li>
+<li id="cite_note-4"><a href="#cite_ref-4" title="">↑</a>  xgridFuse is available at <a href="http://cmgm.stanford.edu/%7Ecparnot/xgrid-stanford/html/goodies/XgridFUSE-info.html" class="external free" title="http://cmgm.stanford.edu/~cparnot/xgrid-stanford/html/goodies/XgridFUSE-info.html" rel="nofollow">http://cmgm.stanford.edu/~cparnot/xgrid-stanford/html/goodies/XgridFUSE-info.html</a></li>
+<li id="cite_note-5"><a href="#cite_ref-5" title="">↑</a> RxGrid is the ruby client API <a href="http://www.tslab.se.shibaura-it.ac.jp/index.php/Software/rxgrid" class="external free" title="http://www.tslab.se.shibaura-it.ac.jp/index.php/Software/rxgrid" rel="nofollow">http://www.tslab.se.shibaura-it.ac.jp/index.php/Software/rxgrid</a></li>
+<li id="cite_note-6"><a href="#cite_ref-6" title="">↑</a> pyXG is the Python client API project <a href="http://pyxg.scipy.org/" class="external free" title="http://pyxg.scipy.org/" rel="nofollow">http://pyxg.scipy.org/</a></li>
+<li id="cite_note-7"><a href="#cite_ref-7" title="">↑</a> The PyXG project files are hosted at <a href="https://launchpad.net/pyxg" class="external free" title="https://launchpad.net/pyxg" rel="nofollow">https://launchpad.net/pyxg</a></li>
+<li id="cite_note-kellerbatch-8"><a href="#cite_ref-kellerbatch_8-0" title="">↑</a> The Xgrid Batch Editor is available for free from <a href="http://kellerfarm.com/kfsproducts/yesfree/xgridbatcheditor/" class="external free" title="http://kellerfarm.com/kfsproducts/yesfree/xgridbatcheditor/" rel="nofollow">http://kellerfarm.com/kfsproducts/yesfree/xgridbatcheditor/</a></li>
+<li id="cite_note-9"><a href="#cite_ref-9" title="">↑</a> Xgrid.rb is available at <a href="http://bitbucket.org/j05e/xgrid/src" class="external free" title="http://bitbucket.org/j05e/xgrid/src" rel="nofollow">http://bitbucket.org/j05e/xgrid/src</a> </li>
+<li id="cite_note-xgridstatus-10"><a href="#cite_ref-xgridstatus_10-0" title="">↑</a> <a href="http://tengrid.com/wiki1/index.php?title=Xgridstatus" title="Xgridstatus">xgridstatus</a> is a compiled binare available for free at <a href="http://cmgm.stanford.edu/%7Ecparnot/xgrid-stanford/html/goodies/xgridstatus-info.html" class="external free" title="http://cmgm.stanford.edu/~cparnot/xgrid-stanford/html/goodies/xgridstatus-info.html" rel="nofollow">http://cmgm.stanford.edu/~cparnot/xgrid-stanford/html/goodies/xgridstatus-info.html</a></li>
+<li id="cite_note-11"><a href="#cite_ref-11" title="">↑</a>  Run matlab code: <a href="http://www.macosxhints.com/article.php?story=20041125065000639" class="external free" title="http://www.macosxhints.com/article.php?story=20041125065000639" rel="nofollow">http://www.macosxhints.com/article.php?story=20041125065000639</a></li>
+<li id="cite_note-12"><a href="#cite_ref-12" title="">↑</a> <a href="http://support.apple.com/kb/HT4020" class="external free" title="http://support.apple.com/kb/HT4020" rel="nofollow">http://support.apple.com/kb/HT4020</a></li>
+<li id="cite_note-13"><a href="#cite_ref-13" title="">↑</a> see [ '<a href="http://www.macresearch.org/xgrid-leopard-good-bad-ugly-and-new-stuff%27" class="external free" title="http://www.macresearch.org/xgrid-leopard-good-bad-ugly-and-new-stuff'" rel="nofollow">http://www.macresearch.org/xgrid-leopard-good-bad-ugly-and-new-stuff'</a>   Xgrid Leopard: the good, the bad, the ugly, and the new stuff ] by charles parnot </li>
+<li id="cite_note-14"><a href="#cite_ref-14" title="">↑</a>  bug report 8090501 </li>
+<li id="cite_note-15"><a href="#cite_ref-15" title="">↑</a> Controller memory issue <a href="http://lists.apple.com/archives/Xgrid-users/2010/Jun/msg00012.html" class="external free" title="http://lists.apple.com/archives/Xgrid-users/2010/Jun/msg00012.html" rel="nofollow">http://lists.apple.com/archives/Xgrid-users/2010/Jun/msg00012.html</a></li></ol>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 317/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key z9cktjms_wikidb1:pcache:idhash:2-0!1!0!!en!2!edit=0 and timestamp 20101011064556 -->
+<div class="printfooter">
+Retrieved from "<a href="http://tengrid.com/wiki1/index.php?title=Xgrid">http://tengrid.com/wiki1/index.php?title=Xgrid</a>"</div>
+						<!-- end content -->
+						<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Views</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="http://tengrid.com/wiki1/index.php?title=Xgrid" title="View the content page [alt-shift-c]" accesskey="c">Page</a></li>
+				 <li id="ca-talk" class="new"><a href="http://tengrid.com/wiki1/index.php?title=Talk:Xgrid&amp;action=edit&amp;redlink=1" title="Discussion about the content page [alt-shift-t]" accesskey="t">Discussion</a></li>
+				 <li id="ca-viewsource"><a href="http://tengrid.com/wiki1/index.php?title=Xgrid&amp;action=edit" title="This page is protected.
+You can view its source [alt-shift-e]" accesskey="e">View source</a></li>
+				 <li id="ca-history"><a href="http://tengrid.com/wiki1/index.php?title=Xgrid&amp;action=history" title="Past revisions of this page [alt-shift-h]" accesskey="h">History</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Personal tools</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="http://tengrid.com/wiki1/index.php?title=Special:UserLogin&amp;returnto=Xgrid" title="You are encouraged to log in; however, it is not mandatory [alt-shift-o]" accesskey="o">Log in / create account</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(&quot;/wiki1/skins//common/images/mosaix.jpg&quot;);" href="http://tengrid.com/wiki1/index.php?title=Main_Page" title="Visit the main page [alt-shift-z]" accesskey="z"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class="generated-sidebar portlet" id="p-navigation">
+		<h5>Navigation</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-mainpage-description"><a href="http://tengrid.com/wiki1/index.php?title=Main_Page">Main Page</a></li>
+				<li id="n-portal"><a href="http://tengrid.com/wiki1/index.php?title=TenGrid:Community_Portal" title="About the project, what you can do, where to find things">Community portal</a></li>
+				<li id="n-currentevents"><a href="http://tengrid.com/wiki1/index.php?title=TenGrid:Current_events" title="Find background information on current events">Current events</a></li>
+				<li id="n-recentchanges"><a href="http://tengrid.com/wiki1/index.php?title=Special:RecentChanges" title="The list of recent changes in the wiki [alt-shift-r]" accesskey="r">Recent changes</a></li>
+				<li id="n-randompage"><a href="http://tengrid.com/wiki1/index.php?title=Special:Random" title="Load a random page [alt-shift-x]" accesskey="x">Random page</a></li>
+				<li id="n-help"><a href="http://tengrid.com/wiki1/index.php?title=Help:Contents" title="The place to find out">Help</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Search</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/wiki1/index.php" id="searchform"><div>
+				<input name="title" value="Special:Search" type="hidden">
+				<input gtbfieldid="5" id="searchInput" name="search" title="Search TenGrid [alt-shift-f]" accesskey="f" type="text">
+				<input name="go" class="searchButton" id="searchGoButton" value="Go" title="Go to a page with this exact name if exists" type="submit">&nbsp;
+				<input name="fulltext" class="searchButton" id="mw-searchButton" value="Search" title="Search the pages for this text" type="submit">
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Toolbox</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="http://tengrid.com/wiki1/index.php?title=Special:WhatLinksHere/Xgrid" title="List of all wiki pages that link here [alt-shift-j]" accesskey="j">What links here</a></li>
+				<li id="t-recentchangeslinked"><a href="http://tengrid.com/wiki1/index.php?title=Special:RecentChangesLinked/Xgrid" title="Recent changes in pages linked from this page [alt-shift-k]" accesskey="k">Related changes</a></li>
+<li id="t-specialpages"><a href="http://tengrid.com/wiki1/index.php?title=Special:SpecialPages" title="List of all special pages [alt-shift-q]" accesskey="q">Special pages</a></li>
+				<li id="t-print"><a href="http://tengrid.com/wiki1/index.php?title=Xgrid&amp;printable=yes" rel="alternate" title="Printable version of this page [alt-shift-p]" accesskey="p">Printable version</a></li>				<li id="t-permalink"><a href="http://tengrid.com/wiki1/index.php?title=Xgrid&amp;oldid=1364" title="Permanent link to this revision of the page">Permanent link</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="xgrid_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki"></a></div>
+				<div id="f-copyrightico"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img src="xgrid_files/88x31.png" alt="Attribution-Noncommercial-Share Alike 3.0 Unported"></a></div>
+			<ul id="f-list">
+					<li id="lastmod"> This page was last modified on 29 September 2010, at 03:06.</li>
+					<li id="viewcount">This page has been accessed 2,276 times.</li>
+					<li id="copyright">Content is available under <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" class="external " title="http://creativecommons.org/licenses/by-nc-sa/3.0/">Attribution-Noncommercial-Share Alike 3.0 Unported</a>.</li>
+					<li id="privacy"><a href="http://tengrid.com/wiki1/index.php?title=TenGrid:Privacy_policy" title="TenGrid:Privacy policy">Privacy policy</a></li>
+					<li id="about"><a href="http://tengrid.com/wiki1/index.php?title=TenGrid:About" title="TenGrid:About">About TenGrid</a></li>
+					<li id="disclaimer"><a href="http://tengrid.com/wiki1/index.php?title=TenGrid:General_disclaimer" title="TenGrid:General disclaimer">Disclaimers</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.191 secs. --></body></html>
