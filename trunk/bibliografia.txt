@@ -11,3 +11,9 @@ http://www.mersenne.org/ first vc project
 * Advances in Grid and Pervasive Computing: 5th International Conference, Bellavista, Paolo Chang; Ruay-Shiung; Chao, Han-Chieh; Lin, Shin-Feng
 * WordWide computing and its applications, Yoshifumi, Takuya Katayama, Michiharu Tsukamoto.
 * The Pillars of Computation Theory: State, Encoding, Nondeterminis, Arnold L. Rosenberg.
+
+http://www.xtremwebch.net/
+http://tengrid.com/wiki1/index.php?title=Xgrid
+http://www.univa.com/products/grid-mp.php
+
+Mohamed BenBelgacem, Nabil Abdennadher and Marko Niinimaki: Virtual EZ Grid: A Volunteer Computing Infrastructure for Scientific Medical Applications, International Journal of Handheld Computing Research, 2011 (accepted, forthcoming) 
