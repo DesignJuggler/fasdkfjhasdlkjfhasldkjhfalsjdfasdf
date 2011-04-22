@@ -16,4 +16,14 @@ http://www.xtremwebch.net/
 http://tengrid.com/wiki1/index.php?title=Xgrid
 http://www.univa.com/products/grid-mp.php
 
-Mohamed BenBelgacem, Nabil Abdennadher and Marko Niinimaki: Virtual EZ Grid: A Volunteer Computing Infrastructure for Scientific Medical Applications, International Journal of Handheld Computing Research, 2011 (accepted, forthcoming) 
+Mohamed BenBelgacem, Nabil Abdennadher and Marko Niinimaki: Virtual EZ Grid: A Volunteer Computing Infrastructure for Scientific Medical Applications, International Journal of Handheld Computing Research, 2011 (accepted, forthcoming)
+
+http://sourceforge.net/projects/slinc/
+http://ostatic.com/slinc
+
+http://dghep.lal.in2p3.fr/lal/doc/xwhep.html
+
+
+
+
+"RPC-V: Toward Fault-Tolerant RPC for Internet Connected Desktop Grids with Volatile Nodes."
