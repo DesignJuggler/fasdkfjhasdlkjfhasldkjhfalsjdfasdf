@@ -24,6 +24,16 @@ http://ostatic.com/slinc
 http://dghep.lal.in2p3.fr/lal/doc/xwhep.html
 
 
+"RPC-V: Toward Fault-Tolerant RPC for Internet Connected Desktop Grids with Volatile Nodes." - http://portal.acm.org/citation.cfm?id=1049983
 
-
-"RPC-V: Toward Fault-Tolerant RPC for Internet Connected Desktop Grids with Volatile Nodes."
+GIMPS -> http://www.mersenne.org/
+http://setiathome.berkeley.edu
+http://cnmm.tsinghua.edu.cn/contents/51/263.html
+http://cleanenergy.harvard.edu/go/
+http://www.ibercivis.es/index.php?module=public&section=channels&action=view&id_channel=5&id_subchannel=42
+http://lhcathome.cern.ch/
+http://www.ps3grid.net/pub/ps3grid_chapter.pdf
+http://www.upf.edu/enoticies/es/0708/0705.html
+http://www.ps3grid.net/
+http://www.unitedboinc.com/projects/116-ps3grid
+http://home.edges-grid.eu/home/
