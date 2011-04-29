@@ -7,9 +7,17 @@ Owner Edu:
 * Agregar la bibliografia
 * Poner Conclusiones.
 * Chequear la tabla de indice, los titulos tienen cualquier header.. (cuando este todo listo..)
+* Agregar estadisticas del uso de estos sistemas:
+  http://www.allprojectstats.com/
+
+* Poner esto, como ayuda en la instalacion de BOINC,  
+    https://docs.google.com/Doc?id=dfjfhhdk_49gd7zsnfc&pli=1
+  pero que no pasa de un esfuerzo individual de 4 autores en google.docs
 
 * Semana del 25 de abril, hablar con Gabrielito y Pablin para entregarle el draft.
   - Hable con Gabriel medio a las apuradas, me dijo que primero tengamos el OK de Pablin, para recien ahi mandarselo a El.
 
 Owner Javier:
 * Chequeate mis comments, asi los sacamos antes de mandar la version a revisar.
+- revisate lo de exponential backoffs, para mi seria una fortaleza que no te joda con muchos requests si se acaba de levantar el servidor..
+  (ojo al parche, puede que no este entendiendo bien de que se trata)
