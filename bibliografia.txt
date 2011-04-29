@@ -37,3 +37,9 @@ http://www.upf.edu/enoticies/es/0708/0705.html
 http://www.ps3grid.net/
 http://www.unitedboinc.com/projects/116-ps3grid
 http://home.edges-grid.eu/home/
+
+Seguridad en BOINC:
+http://setiathome.berkeley.edu/forum_thread.php?id=28132
+http://boinc.berkeley.edu/trac/wiki/SecurityIssues
+http://www.boinc-wiki.info/Security_in_BOINC
+http://www.boinc-wiki.info/BOINC_FAQ:_Security
