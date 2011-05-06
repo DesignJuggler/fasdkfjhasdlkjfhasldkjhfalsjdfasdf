@@ -45,3 +45,6 @@ http://www.boinc-wiki.info/Security_in_BOINC
 http://www.boinc-wiki.info/BOINC_FAQ:_Security
 
 http://www.allprojectstats.com/
+
+
+http://tengrid.com/wiki1/index.php?title=Bugs_and_Missing_Functionality
