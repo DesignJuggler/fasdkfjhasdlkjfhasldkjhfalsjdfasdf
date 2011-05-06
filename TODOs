@@ -21,3 +21,14 @@ Owner Javier:
 * Chequeate mis comments, asi los sacamos antes de mandar la version a revisar.
 - revisate lo de exponential backoffs, para mi seria una fortaleza que no te joda con muchos requests si se acaba de levantar el servidor..
   (ojo al parche, puede que no este entendiendo bien de que se trata)
+
+
+--- Mas cosas que faltan -----------
+Resumen.
+Abstract.
+Motivacion y Objetivos - esto puede salir en parte de lo que mentimos en la propuesta..
+Poner Encabezado y pie.
+
+Fortalezas de BOINC:
+es multiplataforma.
+
