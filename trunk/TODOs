@@ -2,14 +2,14 @@ Escribo esto asi no se me escapa el viscachazo:
 -----------------------------------------------
 
 Owner Edu:
-* Verificar formato con posgrado/Gabriel Infante por la HCD-73/05 si aplica como la del doctorado..
-   - lo vi con el doc de los chicos, y si.. hay que cambiar bastante.. estoy creando un nuevo doc para meterle todos los cambios,
-     y que la integracion sea mas linda.. cambie el formato de pagina de Carta a A4.
+(closed) Verificar formato con posgrado/Gabriel Infante por la HCD-73/05 si aplica como la del doctorado..
+        - lo vi con el doc de los chicos, y si.. hay que cambiar bastante.. estoy creando un nuevo doc para meterle todos los cambios,
+          y que la integracion sea mas linda.. cambie el formato de pagina de Carta a A4.
 
 * Agregar cambios que meta Javier.
-* Agregar la bibliografia
-* Poner Conclusiones. 
-  (- Lista la seccion para poner esto y trabajo futuro.. ver como llenarlo despues..)
+* Agregar la bibliografia - Lista seccion en el doc nuevo, agregar el txt al final.
+
+* Poner Conclusiones. (Lista la seccion para poner esto y trabajo futuro.. ver como llenarlo despues..)
 * Chequear la tabla de indice, los titulos tienen cualquier header.. (cuando este todo listo..)
   - Estoy en eso, header = Encabezado 2, subtitulo 3 y asi.. 
   ( on going.. en el doc nuevo)
@@ -20,22 +20,26 @@ Owner Edu:
     https://docs.google.com/Doc?id=dfjfhhdk_49gd7zsnfc&pli=1
   pero que no pasa de un esfuerzo individual de 4 autores en google.docs
 
-* Semana del 25 de abril, hablar con Gabrielito y Pablin para entregarle el draft.
-  - Hable con Gabriel medio a las apuradas, me dijo que primero tengamos el OK de Pablin, para recien ahi mandarselo a El.
+(closed) Semana del 25 de abril, hablar con Gabrielito y Pablin para entregarle el draft.
+        - Hable con Gabriel medio a las apuradas, me dijo que primero tengamos el OK de Pablin, para recien ahi mandarselo a El.
+        - pum ---> reeschedulear la entrega hasta tener todo integrado..
 
 Owner Javier:
 * Chequeate mis comments, asi los sacamos antes de mandar la version a revisar.
-- revisate lo de exponential backoffs, para mi seria una fortaleza que no te joda con muchos requests si se acaba de levantar el servidor..
-  (ojo al parche, puede que no este entendiendo bien de que se trata)
+(closed) revisate lo de exponential backoffs, para mi seria una fortaleza que no te joda con muchos requests si se acaba de levantar el servidor..
+        (ojo al parche, puede que no este entendiendo bien de que se trata). - Listo esta puesto como fortaleza..
 
 
 --- Mas cosas que faltan -----------
-Resumen. - lista la seccion en doc integrador nuevo, hay que llenar con algo..
-Abstract. - lista la seccion en doc integrador nuevo, hay que llenar con algo..
-Motivacion y Objetivos - esto puede salir en parte de lo que mentimos en la propuesta..
-Poner Encabezado y pie. - - lista la seccion en doc integrador nuevo..
+Resumen. - lista la seccion en doc integrador nuevo, hay que llenar con alguito mas...
+Abstract. - lista la seccion en doc integrador nuevo, hay que llenar con la version en ingles de resumen.
+(closed) Motivacion y Objetivos -  LISTO, lo puse en introduccion, mas datos me parece que seria al pedo..
+(closed) Poner Encabezado y pie. - - listo en doc integrador nuevo..
 
 -- MAS MAS COSAS:
 pensar en nexos entre los capitulos...
 cambiar las imagenes a Castellano.
+Darle un cacho de vueltas a BOINC, sigue bastante Feo..
+Eliminar los comentarios.. Pasando a mejoras lo que deba pasarse..
+creo que la wish list de xgrid deberia ir en mejoras.. tmb..
 
