@@ -1,9 +1,9 @@
 Bibliografía:
 
-http://en.wikipedia.org/wiki/Volunteer_computing 
-http://www.jgroups.org/taskdistribution.html 
-http://boinc.berkeley.edu 
-http://boinc.berkeley.edu/trac/wiki/SecurityIssues 
+http://en.wikipedia.org/wiki/Volunteer_computing
+http://www.jgroups.org/taskdistribution.html
+http://boinc.berkeley.edu
+http://boinc.berkeley.edu/trac/wiki/SecurityIssues
 http://boinc.berkeley.edu/trac/wiki/BoincPapers
 http://www.spiritus-temporis.com/volunteer-computing/
 http://www.mersenne.org/ first vc project
@@ -49,3 +49,4 @@ http://www.allprojectstats.com/
 
 http://tengrid.com/wiki1/index.php?title=Bugs_and_Missing_Functionality
 
+http://www.sg.com.mx/content/view/767
