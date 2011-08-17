@@ -1,11 +1,11 @@
 tx = ty = linspace (1, 100, 41)';
 [xx, yy] = meshgrid (tx, ty);
-tz = (-0.01 .*xx + 0.48) .* yy - 0.03;
+tz = -(0.01.*xx +0.00009591 ).*yy + 0.48 .*xx ;
 mesh (tx, ty, tz);
-xlabel("k");
-ylabel("tiempo por tarea en horas");
+ylabel("k");
+xlabel("tiempo por tarea en horas");
 zlabel ("paga maxima por tarea");
-view(9,35);
+view(250,30);
 print('-dsvg','figure.svg');
 print('-dpsc','figure.ps');
 print('-djpg','figure.jpg');
