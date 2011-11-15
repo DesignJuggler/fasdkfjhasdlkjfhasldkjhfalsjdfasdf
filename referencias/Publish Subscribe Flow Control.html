@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0088)http://www.swiftmq.com/products/router/swiftlets/sys_topicmanager/flowcontrol/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Publish/Subscribe Flow Control</title>
+<link rel="stylesheet" href="./Publish Subscribe Flow Control_files/screenstyle.css" type="text/css" media="screen, projection">
+<!--[if IE 5]>
+<link rel="stylesheet" type="text/css" href="./css/screenstyle-ie5.css" media="screen, projection" />
+<![endif]-->
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" href="./css/screenstyle-ie5.css" media="screen, projection" />
+<![endif]-->
+<link rel="stylesheet" href="./Publish Subscribe Flow Control_files/printstyle.css" type="text/css" media="print">
+<meta name="author" content="">
+<meta name="publisher" content="">
+<meta name="copyright" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="page-topic" content="">
+<meta name="audience" content="">
+<meta name="expires" content="">
+<meta name="page-type" content="">
+<meta name="robots" content="">
+
+<meta http-equiv="imagetoolbar" content="no">
+</head>
+<body>
+<!--Head-->
+<div id="head_container">
+<div id="logo_box_swiftmq"><a href="http://www.swiftmq.com/" title="SwiftMQ.COM"><img src="./Publish Subscribe Flow Control_files/logo-swiftmq.jpg" width="210" height="130"></a></div>
+<div id="logo_box_iit"><img src="./Publish Subscribe Flow Control_files/logo-iit-software.gif" width="109" height="28"></div>
+<h1 id="head_claime">High Quality JMS Messaging.</h1>
+<!--Topnavi-->
+<ul id="ul_topnavi">
+<li class="li_topnavi"><a class="a_topnavi" href="http://www.swiftmq.com/products/index.html" title="Products">Products</a></li>
+<li class="li_topnavi"><a class="a_topnavi" href="http://www.swiftmq.com/downloads/index.html" title="Downloads">Downloads</a></li>
+<li class="li_topnavi"><a class="a_topnavi" href="http://www.swiftmq.com/developers/index.html" title="Developers">Developers</a></li>
+<li class="li_topnavi"><a class="a_topnavi" href="http://www.swiftmq.com/purchase/index.html" title="Purchase">Purchase</a></li>
+<li class="li_topnavi"><a class="a_topnavi" href="http://www.swiftmq.com/support/index.html" title="Support">Support</a></li>
+<li class="li_topnavi"><a class="a_topnavi" href="http://www.swiftmq.com/consulting/index.html" title="Consulting">Consulting</a></li>
+<li class="li_topnavi"><a class="a_topnavi" href="http://www.swiftmq.com/myswiftmq/index.html" title="MySwiftMQ.COM">MySwiftMQ</a></li>
+<li class="li_topnavi_last"><a class="a_topnavi" href="http://www.swiftmq.com/about/index.html" title="About">About</a></li>
+</ul>
+<!--Topnavi Ende-->
+<!--Breadnavi-->
+<div id="breadnavi">
+<ul id="ul_breadnavi">
+
+ <li class="li_breadnavi"><a class="a_breadnavi" href="http://www.swiftmq.com/index.html" title="SwiftMQ.COM"><span class="span_breadnavi">»</span> SwiftMQ.COM</a></li>
+
+ <li class="li_breadnavi"><a class="a_breadnavi" href="http://www.swiftmq.com/products/index.html" title="Products"><span class="span_breadnavi">»</span> Products</a></li>
+
+ <li class="li_breadnavi"><a class="a_breadnavi" href="http://www.swiftmq.com/products/router/index.html" title="SwiftMQ Router"><span class="span_breadnavi">»</span> SwiftMQ Router</a></li>
+
+ <li class="li_breadnavi"><a class="a_breadnavi" href="http://www.swiftmq.com/products/router/swiftlets/index.html" title="Swiftlets"><span class="span_breadnavi">»</span> Swiftlets</a></li>
+
+ <li class="li_breadnavi"><a class="a_breadnavi" href="http://www.swiftmq.com/products/router/swiftlets/sys_topicmanager/index.html" title="Topic Manager Swiftlet"><span class="span_breadnavi">»</span> Topic Manager Swiftlet</a></li>
+
+</ul>
+</div>
+<!--Bread ENDE-->
+</div>
+<!--Head ENDE-->
+<!--Content-->
+<div id="content_container">
+<div id="content_leftframe">
+<!--Searchbox-->
+  <form id="searchbox" action="http://www.swiftmq.com/search.html" method="post">
+    <h1 class="h1_red">Search</h1>
+    <input id="tf_search" type="text" name="query" value="" size="20" maxlength="100">
+    <input id="btn_search" type="submit" name="btn_search" value="» GO">
+  </form>
+  <img src="./Publish Subscribe Flow Control_files/pix.gif" width="1" height="400">
+<!--Searchbox Ende-->
+</div>
+<!--Mitte-->
+<div id="content_mainframe">
+<!-- Hier beginnen die Inhalte -->
+
+  
+  
+    
+	
+      
+      
+
+  
+    
+	
+			
+        
+          
+	
+      
+      
+          
+            <h1>Publish/Subscribe Flow Control</h1>
+          
+          
+      
+        
+	
+      <p>
+			SwiftMQ provides publish/subscribe flow control. As for point-to-point queues, the flow control is based on flow control delays. During the publish/commit operation, all flow control delays of the selected subscriber queues are determined and the maximum delay is delivered back. So, the flow control delay is that of the slowest subscriber.
+      </p>
+			
+
+      
+      
+			
+
+        
+			
+        
+          
+	
+      
+      
+          
+            <h1>Slow Subscriber Conditions</h1>
+          
+          
+      
+        
+	
+      <p>
+			In some use case scenarios it is very important to maintain a constant publishing rate. For example, a trading feed in a financial application requires that feed data (stock prices) are published without delays. If there are slow subscribers on that feed topic, either a backlog of messages will increase for that subscribers or, when using pub/sub flow control, the publisher will be throttled down from SwiftMQ to the rate of the slowest subscriber.
+      </p>
+			
+
+      
+        
+	
+      <p>
+			To avoid this situations, slow subscriber conditions can be created. Such a condition identifies a slow subscriber during the publish transaction and, if the condition matches, avoids to send further messages to those matching subscribers until the condition doesn't match with future publish transactions. Thus, a constant publishing rate is created.
+      </p>
+			
+
+      
+        
+	
+      <p>
+			SwiftMQ 5.2.0 onwards also allows to remove non-durable subscriber connections and to remove durable subscriber connections including deleting the durable subscriptions. See sections below.
+      </p>
+			
+
+      
+        
+	
+      <p>
+			A slow subscriber condition is defined per 'root topic', which is the first node of a topic hierarchy. Say, all your feeds are summarized under the hierarchy 'feed', e.g. 'feed.bloomberg', 'feed.reuters', a condition can be defined on root topic 'feed'. The condition is valid for all sub-topics in the hierarchy. Further condition attributes are the persistence-mode (all, persistent, non_persistent), the subscription-type (all, local, remote) and the maximum messages in the subscriber queue during the time of the publish operation.
+      </p>
+			
+
+      
+        
+	
+      <p>Example:<br>
+      
+        
+          </p><pre>    &lt;swiftlet name="sys$topicmanager"&gt;
+      &lt;slow-subscriber-conditions&gt;
+        &lt;topic name="feed" max-messages="100" persistence-mode="non_persistent" subscription-type="local"/&gt;
+        &lt;topic name="events" max-messages="300" persistence-mode="all" subscription-type="remote"/&gt;
+      &lt;/slow-subscriber-conditions&gt;
+      &lt;topics&gt;
+        &lt;topic name="feed"/&gt;
+        &lt;topic name="feed.bloomberg"/&gt;
+        &lt;topic name="feed.reuters"/&gt;
+        &lt;topic name="events"/&gt;
+      &lt;/topics&gt;
+    &lt;/swiftlet&gt;</pre>
+        
+      <p></p>
+			
+
+      
+        
+	
+      <p>
+			The example defines 2 conditions. The first is for the topic hierarchy 'feed' and matches for nonpersistent messages and local subscribers if the subscriber queue has reached 100 messages. The second condition is for topic hierarchy 'events', matches for all messages but only for remote subscriptions and permits max. 300 messages in the subscriber queue.
+      </p>
+			
+
+      
+        
+	
+      <p>
+			Note that for remote subscriptions the subscriber queue is the routing queue of the resp. router and thus the message count of that queue is taken.
+      </p>
+			
+
+      
+        
+	
+      
+      
+          <h2>Disconnecting Non-Durable Subscribers</h2>
+          
+      
+        
+	
+      <p>
+			SwiftMQ 5.2.0 onwards adds an attribute "disconnect-non-durable-subscriber" to a slow subscriber condition. The default value is false. If it is set to true, all non-durable subscriber connections for which the condition matches will be removed. This option is useful if there are malfunctioning JMS clients which have topic subscriptions.
+      </p>
+			
+
+      
+      
+			
+
+      
+        
+	
+      
+      
+          <h2>Disconnecting Durable Subscribers and Delete Durable Subscriptions</h2>
+          
+      
+        
+	
+      <p>
+			SwiftMQ 5.2.0 onwards adds another attribute "disconnect-delete-durable-subscriber" to a slow subscriber condition. The default value is false. If it is set to true, all durable subscriber connections for which the condition matches will be removed and their durable subscriptions will be deleted. That is, all messages in their durable subscriber queue will be lost! So be careful with this option. This option is useful if there are malfunctioning JMS clients which have durable topic subscriptions or if there are "dead" durable subscription on a topic (a JMS client created a durable subscription but doesn't use it anymore so the durable subscriber queue grows and grows).
+      </p>
+			
+
+      
+      
+			
+
+      
+      
+			
+
+        
+			
+			
+
+  
+
+<!-- Hier enden die Inhalte -->
+</div>
+</div>
+<!--Content ENDE-->
+<!--Foot-->
+<div id="foot_container">&nbsp;
+ <!--Copyright-->
+ <div id="copyright">
+   © Copyright 2000-2011 IIT Software GmbH. All rights reserved.
+   SwiftMQ and Swiftlet are registered trademarks of IIT Software GmbH.
+   All other product names mentioned herein are trademarks of their respective owners.
+ </div>
+</div>
+<!--Foot Ende-->
+<script src="./Publish Subscribe Flow Control_files/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-642704-1";
+urchinTracker();
+</script>
+  
+
+</body></html>
