@@ -9,3 +9,14 @@ view(250,30);
 print('-dsvg','figure.svg');
 print('-dpsc','figure.ps');
 print('-djpg','figure.jpg');
+figure ;
+tzz = -(0.01.*xx +0.00009591 ).*yy + 0.3754.*xx ;
+mesh (tx, ty, tzz);
+ylabel("k");
+xlabel("tiempo por tarea en horas");
+zlabel ("paga maxima por tarea");
+view(250,30);
+print('-dsvg','figureCLIENTE.svg');
+print('-dpsc','figureCLIENTE.ps');
+print('-djpg','figureCLIENTE.jpg');
+
