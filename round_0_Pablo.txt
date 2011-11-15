@@ -1,0 +1,14 @@
+Notas Edu:
+  * Conclusion - Aportes del trabajo
+               - Cual es el mejor sistema para usar
+               - Cual es el mejor para hacerlo rentado.
+               - Cual requiere menos cambios.
+  * poner en un capitulo aparte el estudio de costos.
+  * Grafico para fortalezas y debilidades con checkboxes.
+
+Notas JJ:
+  * Arq. Nueva
+  * Arq. Paga
+  * Con que se puede seguir
+  * Cuadro resumen
+  * Estudio simple con muchos assuptions y una de las areas a continuar
