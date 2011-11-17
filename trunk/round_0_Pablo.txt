@@ -1,14 +1,16 @@
 Notas Edu:
-  * Conclusion - Aportes del trabajo
-               - Cual es el mejor sistema para usar
+  * Conclusion - Aportes del trabajo (investigacion profunda de las herramientas actuales de computo voluntario..)
+               - Cual es el mejor sistema para usar (Xwhep es el mas versatil.. arquitectonicamente.. si es una entidad.. usar BOINC por el soporte.. es choto es malo es lento pero con mas soporte..)
                - Cual es el mejor para hacerlo rentado.
                - Cual requiere menos cambios.
-  * poner en un capitulo aparte el estudio de costos.
+  * poner en un capitulo aparte el estudio de costos. JJ
   * Grafico para fortalezas y debilidades con checkboxes.
+
+- mandar el mail a Gabriel
 
 Notas JJ:
   * Arq. Nueva
   * Arq. Paga
-  * Con que se puede seguir
+  * Con que se puede seguir (Nuevas lineas de investigacion, estudio de costos mas completo..)
   * Cuadro resumen
-  * Estudio simple con muchos assuptions y una de las areas a continuar
+  * Estudio simple con muchos assumptions y una de las areas a continuar
