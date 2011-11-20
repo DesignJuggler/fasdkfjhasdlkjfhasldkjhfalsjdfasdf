@@ -8,6 +8,18 @@ BOINC:
 - Anonimidad de los voluntarios..
 - La Comunicacion entre los diferentes módulos via BDD
 * Tiene un proceso nativo para eliminar archivos temporales.
+* Codigo Abierto
+* Random Exponential Backoff: arribo de pedidos estable en el tiempo!
+* Soporte para gran volumen de datos
+* Interfaz web para voluntarios
+* Seguridad: algunas UP algunas DOWN
+* Mala Documentación o Faltante.
+* No balancea la carga
+* No distribuye sus componentes teniendo localidad espacial ni temporal
+* Los voluntarios por mas que esten en la misma maquina, no pueden compartir sus archivos.
+* Tareas poco automatizadas
+* Restriccion de una unica BDD: MySql
+* API reducida: Fortran y C++.
 * Antecesor: NADIE
 
 XtreamWeb:
@@ -34,6 +46,14 @@ Xgrid:
 * Los agentes deben autenticarse, no son anonimos.
 * Poca versatilidad y eficiencia en manejo de datos, son XML ocupando un 4/3 mas que el original
 * Los datos van del proyecto cliente - al controlador - al agente. y no van de proyecto cliente a agente.
+* Permisos UNIX
+* Ejecucion en Sandbox
+* Elimina todos los hijos de los procesos cuando termina la ejecucion.
+* Shared FS, si se lo administra bien
+* No puede definirse la cantidad de recursos de antemano
+* Tareas concurrentes no pueden corren en el mismo agente
+* La autenticacion no es 100% confiable.
+* BUGS importantes: memory leaks y necesidad de reinicio del controlador si se queda sin red.
 
 Grid MP:
 * Licencia comercial
@@ -50,6 +70,7 @@ Grid MP:
 * Hay comunicación entre los "voluntarios"/"workers".
 * Hay redundancia en la ejecucion de las tareas.
 * Tiene un proceso nativo para eliminar archivos temporales.
+
 
 
 SLINC:
