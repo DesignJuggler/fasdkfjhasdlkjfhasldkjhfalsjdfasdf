@@ -6,7 +6,24 @@ Notas Edu:
   * poner en un capitulo aparte el estudio de costos. JJ
   * Grafico para fortalezas y debilidades con checkboxes.
 
-- mandar el mail a Gabriel
+- mandar el mail a Gabriel.. DONE!
+   Cuando tengamos listo el PDF final, pedir a Pablo que mande el mail "de acuerdo" a Gabriel y le mandamos el pdf final a Gabriel.
+
+Log de fixes by Edu:
+* Cambie el título, "Algunas Estadisticas importantes:" por "Algunas Estadisticas Representativas", y algunas mayusculas en titulos por la zona. Capitulo "BOINC EN NUMEROS".
+* Pagina 13: En BOINC, se hace referencia a "participante", lo cambie por "voluntario" y le agregue un poco mas de labia, a la parte del servidor.
+* Pagina 13: Agregue en la nota al pie, referencia de que es la NFS y no solo la URL.-
+* Pagina 15: Acento en 5), cambie el titulo a "Datos interesantes a tener en cuenta"
+* Pagina 16: Fix "permantentes"
+* Pagina 17: cambie "cliente" por "el proyecto de investigación" y acentos everywhere..
+* Pagina 18: Fix Figura, no es "Voluntario" sino "Proyecto Cliente"
+* Pagina 20: Fix "empujan" debe cambiarse por "tiran".
+* Pagina 25: Fix "estago" debe cambiarse por "estado"
+* Pagina 26: Par de acentos y espacios. Creando el subtitulo "Agente MP"
+* Pagina 29: Se agregaron mayores datos a SLINC.
+* Pagina 30: se Agregaron referencias al pie de URLs.
+Revisado hasta pagina 33.. no doy massssss!!!
+aGREGAR A DOCUMENTACION http://www.google.com.ar/url?sa=t&rct=j&q=xwhep%20documentation&source=web&cd=5&ved=0CDYQFjAE&url=http%3A%2F%2Fwww.edges-grid.eu%2Fc%2Fdocument_library%2Fget_file%3FfolderId%3D12906%26name%3DDLFE-908.pdf&ei=QWnITqGmGsX-8QOf1vlj&usg=AFQjCNFabKHWPmZ3lLL6AF7OQM6mi2uKtw&cad=rja
 
 Notas JJ:
   * Arq. Nueva

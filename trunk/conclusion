@@ -1,0 +1,99 @@
+Cuadro Comparativo:
+------ ------------
+
+BOINC:
++ BOINC es multiplataforma.- (Windows, Lunux, MAC OS, Unix, etc-)
+- Los componentes del server estan centralizados y no distribuidos.
+.. Modelo PULL: El voluntario pide nuevos trabajos al servidor..
+- Anonimidad de los voluntarios..
+- La Comunicacion entre los diferentes módulos via BDD
+* Tiene un proceso nativo para eliminar archivos temporales.
+* Antecesor: NADIE
+
+XtreamWeb:
++ Utiliza tecnología P2P.-
++ Compatible con redes GRID.-
++ Altamente paralelizable
+* Antecesor: NADIE
+- Arquitectura Centralizada.-
+
+XtreamWeb-CH:
+* Antecesor: XtreamWeb
+* Permite Ejecución de aplicaciones paralelas/distribuidas compuestas
+* Comunicacion entre modulos via RPC.-
+* Arquitectura Parcialmente descentralizada con respecto a XW.
+* Comunicacion directa entre nodos trabajadores/voluntarios.-
+* Cuenta con una amplia API multi-lenguaje (lenguaje JAVA, C/C++ y Python).-
+
+
+Xgrid:
+* Software y protocolo propietario de Apple.
+* Preinstalado en ordenadores con MAC OS.
+* Un equipo puede cumplir cualquier rol, sin ningún cambio. (servidor/proyecto cliente/voluntario)
+* Pobre interfaz para control de trabajos: Via linea de comandos.
+* Los agentes deben autenticarse, no son anonimos.
+* Poca versatilidad y eficiencia en manejo de datos, son XML ocupando un 4/3 mas que el original
+* Los datos van del proyecto cliente - al controlador - al agente. y no van de proyecto cliente a agente.
+
+Grid MP:
+* Licencia comercial
+* Multiplataforma: Linux, Windows, Mac OS, Solaris, etc.
+* Multilenguaje: aunque con preferencias marcadas en "C++", proporciona SDK con ejemplos en Perl, C++, Java, C#.
+* Preparado para BDD comerciales: ejemplos de store-procedures para DB2 y Oracle
+* Seguridad: firmas digitales/ SSL.
+* Restricciones de recursos.
+* Reasignacion automatica en caso de falla.
+* Ambiente de ejecucion seguro (sandbox)
+* Los usuarios se autentican
+* Diferentes interfaces para enviar los datos. (MGSI, Consola de Gestión, etc.)
+* Posibilidad de consumir datos en paralelo y empleo de trabajos basados en MPI.
+* Hay comunicación entre los "voluntarios"/"workers".
+* Hay redundancia en la ejecucion de las tareas.
+* Tiene un proceso nativo para eliminar archivos temporales.
+
+
+SLINC:
+* Al estar desarrollado en Java, es multi-plataforma e independiente del S.O.
+* Antecesor: BOINC
+* Comunicacion entre modulos via RPC.-
+* El codigo puede escribirse en cualquier lenguaje con soporte de libreria XML-RPC.
+* El uso de Hibernate, permite la flexiblidad en el tipo de bdd que un proyecto usa. BOINC no lo hace..
+  SLINC provides the ability to use the embedded HSQLDB database, MySQL, PostgreSQL, Oracle, or Microsoft SQL Server.
+* No existe la comunicacion entre los clientes/voluntarios.
+* Hay un unico cliente x PC voluntaria.
+* No usa encripcion de ningun tipo.
+* Instalacion y creacion de proyectos mas rapida que BOINC
+
+
+XWHEP:
+* Licencia Open Source, GPL.
+* Multiplataforma (Win32, linux, mac os x)
+* Tolerante a Fallas.
+* Multi aplicacion
+* Multi usuarios
+* Antecesor: XW
+* Las comunicaciones estan encriptadas.
+* Los recursos son anonimos, pero los usuarios no.
+* Es distribuido y transparente: soporte P2P.
+* Es seguro
+* Power-On automatico basado en la carga de la PC.
+* Tiene permisos de usuarios y tareas.
+* Modo PULL, multi-protocolo
+* MySQL DB
+
+USAR el cuadro de XtreamWeb-HEP Introduction pagina 6
+
+
+
+
+
+Conclusion:
+A lo largo del presente trabajo, se ha identificado los sistemas de cómputo voluntario más importantes y más populares del mercado; sin hacer distincion de licencias: GPL, LGPL, comerciales, cerradas dentro de un SO.
+Se ha identificado la arquitectura de cada uno de ellos, se han descripto sus componentes principales y cada una de sus funciones.
+
+* Poner Creative Commons Chirimbols..
+* Actualizar el indice.
+
+
+
+
