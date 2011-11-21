@@ -109,10 +109,34 @@ USAR el cuadro de XtreamWeb-HEP Introduction pagina 6
 
 
 Conclusion:
-A lo largo del presente trabajo, se ha identificado los sistemas de cómputo voluntario más importantes y más populares del mercado; sin hacer distincion de licencias: GPL, LGPL, comerciales, cerradas dentro de un SO.
-Se ha identificado la arquitectura de cada uno de ellos, se han descripto sus componentes principales y cada una de sus funciones.
+Cuando en el año 2010; comenzamos a barajar la posibilidad de hacer un trabajo integrador, pensamos que sería muy importante y enriquecedor estudiar e investigar un tópico que no hubiese sido abarcado durante la "Especialidad en Sistemas y Servicios Distribuidos". De esta manera, surgió el tema del cómputo voluntario; ya que no habia sido presentado y no teniamos claro cual era el impacto que tenia en los sistemas distribuidos. Luego de realizar la investigación, podemos concluir que el cómputo voluntario maneja un gran volumen de datos y poder de cómputo, por lo que no debe ser tomado a la ligera. 
+Realmente cuesta creer que máquinas hogareñas logren un poder de cómputo cercano a 1.5 petaflops, solo cuando estan corriendo el protector de pantallas.
+A lo largo del presente trabajo, se han identificado los sistemas de cómputo voluntario más importantes y más populares del mercado; sin hacer ningún tipo de distinción en cuanto a licencias; ya sean GPL, LGPL, comerciales, cerradas o distribuidas dentro de un SO.
+Creemos que los objetivos generales de investigación planteados al inicio del trabajo han sido cumplidos, desprendiendose que los aportes más importantes han sido los siguientes: 
 
-* Poner Creative Commons Chirimbols..
+* Analizar y estudiar el estado del arte de los sistemas de cómputo voluntario.
+* Relevar las tecnologias y frameworks utilizados.
+* Identificar las arquitecturas de cada sistema en particular, describiendo sus componentes principales, su funcionamiento y su ciclo de vida.
+* Realizar una extensa comparación de cada uno de ellos mediante un cuadro resúmen, con las caracteristicas mas importantes de cada uno.
+* Relevar los proyectos que esten utilizando esta metodología actualmente.
+* Cuantificar este tipo de proyectos: poder de cómputo, cantidad de usuarios, paises involucrados.
+* Identificar las fortalezas y debilidades de estos sistemas.
+* Proponer mejoras tanto a BOINC como a estos sistemas en general.
+* Efectuar un estudio de costos, aunque preliminar, que demuestre la factibilidad de hacer rentado este tipo de sistemas.
+* Establecer el punto de partida, tanto al proyecto cliente que no esta seguro de que sistema de cómputo voluntario seleccionar como a aquel usuario de PC; que quiere compartir sus recursos con algun proyecto de investigación y no sabe como hacerlo. 
+
+En cuanto a la elección del mejor sistema de cómputo voluntario, podríamos decir que XWHEP es muy versatil en su arquitectura, muy seguro, y con todas los beneficios de P2P; pero su documentación y su propaganda no son buenas. Posiblemente tengamos el sistema corriendo en la mejor arquitectura, pero sin voluntarios. En contrapartida, podemos decir que BOINC es el que mejor propaganda tiene, mayor cantidad de voluntarios experimentados y que maneja grandes volumenes de datos; pero es lento y puede que falle su base de datos MySQL (para usuarios de SETI; no sería raro); haciendo que el proyecto no progrese y hasta perdiendo voluntarios.
+Lo anterior no hace mas que ejemplificar que debido a la heterogeneidad de los sistemas, no puede identificarse claramente y "a priori" el mejor sistema de cómputo voluntario; sino que el investigador encargado del proyecto debe evaluar cada uno de ellos dependiendo la arquitectura que se amolde mas a sus necesidades y a los recursos voluntarios con los que disponga.
+
+Trabajos futuros:
+Los sistemas de cómputo voluntario han demostrado ser dinámicos y "reinventarse" a partir de sus predecesores; caso XWHEP, XtremWeb-CH y SLINC), por lo que la investigación nunca estará completa. Siempre se esperan nuevos sistemas que abarquen y den solucion a nuevas necesidades, por lo que deberian compararse con los anteriores. 
+Por otro lado, las mejoras que dejamos planteadas deberían ser implementadas finalmente en sistemas de cómputo voluntario, para ayudar a la comunidad de investigadores y de voluntarios a tener sistemas más seguros y confiables.
+Por último, creemos que una investigación profunda del estudio de costos podria beneficiar el trabajo; ayudando a tomar la dificil decision de pasar de sistemas anonimos y completamente voluntarios; a sistemas hibridos; con voluntarios y "voluntades compradas".
+
+
+
+
+* Poner Creative Commons Chirimbols.. DOne!
 * Actualizar el indice.
 
 
