@@ -22,8 +22,6 @@ Log de fixes by Edu:
 * Pagina 26: Par de acentos y espacios. Creando el subtitulo "Agente MP"
 * Pagina 29: Se agregaron mayores datos a SLINC.
 * Pagina 30: se Agregaron referencias al pie de URLs.
-Revisado hasta pagina 33.. no doy massssss!!!
-
 * Pagina 33: correccion en la cantidad de usuarios de SETI.
 * Pagina 39: Se agrego info a Codigo Abierto 
 * Pagina 41: Se agrego la referencia a la bibliografia en la nota al pie.
@@ -31,11 +29,10 @@ Revisado hasta pagina 33.. no doy massssss!!!
              Se agregaron la cantidad de hosts en los que aparecen ventanas emergentes cuando la bdd falla.
 * Pagina 44: Se agrego nota al pie con la URL de "repair permissions", se refraseo un poco.. y corrigio el "falta"
              Se elimino uno de los "de" en "Este cordón de de"
+* Pagina 48: palabras en ingles, en cursiva.
+             Se agrego la referencia al origen de la idea: "Esta idea es una adaptación del sistema XtremWeb-CH y su proceso espía."
+* Pagina 49 y posteriores: Acentos y cursiva en palabras en ingles.
 
-
-Estamos hablando de ventanas emergentes apareciendo en 1.200.000 voluntarios de 253 paises!
-
-aGREGAR A DOCUMENTACION http://www.google.com.ar/url?sa=t&rct=j&q=xwhep%20documentation&source=web&cd=5&ved=0CDYQFjAE&url=http%3A%2F%2Fwww.edges-grid.eu%2Fc%2Fdocument_library%2Fget_file%3FfolderId%3D12906%26name%3DDLFE-908.pdf&ei=QWnITqGmGsX-8QOf1vlj&usg=AFQjCNFabKHWPmZ3lLL6AF7OQM6mi2uKtw&cad=rja
 
 Notas JJ:
   * Arq. Nueva
