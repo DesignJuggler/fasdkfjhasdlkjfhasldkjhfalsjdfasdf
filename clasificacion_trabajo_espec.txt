@@ -1,0 +1,46 @@
+Clasificación
+-------------
+
+C.1.4 Parallel Architectures 
+	Distributed architectures
+C.2.1 Network Architecture and Design
+	Network topology
+	Distributed networks 
+C.2.4 Distributed Systems
+	Client/server
+D.1.3 Concurrent Programming
+	Distributed programming
+	Parallel programming 
+D.2.11 Software Architectures
+	Domain-specific architectures
+	Patterns 
+D.4.3 File Systems Management (E.5)
+	Distributed file systems 
+D.4.4 Communications Management (C.2)
+	Network communication 
+D.4.7 Organization and Design
+	Distributed systems 
+F.1.2 Modes of Computation
+	Parallelism and concurrency 
+H.3.4 Systems and Software
+	Distributed systems 
+H.5.3 Group and Organization Interfaces
+	Collaborative computing
+
+Palabras Clave 
+---------------		 
+sistema, distribuido, cómputo, voluntario, arquitectura, BOINC, Seti, Grid, computing, XtremWeb, 
+XtremWeb-CH, Xgrid, SLINC, GridMP, componentes, cuadros, comparativos, open, source.
+
+
+Resumen
+-------
+Día a día se incrementa la cantidad de proyectos de investigación, tanto en el ámbito académico como en el industrial; 
+que requieren, de un mayor poder de cómputo y/o de almacenamiento. El cómputo voluntario permite darle una solución a 
+este problema, donde el recurso “voluntario” ofrece su capacidad de cómputo o de almacenamiento a proyectos que lo necesiten. 
+Sin embargo, hemos identificado algunos problemas que no han sido solucionados del todo, o a los que la computación voluntaria
+no ofrece ningún tipo de garantía ni soporte; ya sea porque no fue diseñado para solucionarlos o porque no fueron tenidos en cuenta. 
+En el presente trabajo, se estudiarán las diferentes herramientas actuales para realizar cómputo voluntario, se mostrarán sus 
+diferentes arquitecturas, sus fortalezas y debilidades. Para terminar,  se enumerarán mejoras generales a este tipo de sistemas
+y en particular al más popular de todos: BOINC.-
+
